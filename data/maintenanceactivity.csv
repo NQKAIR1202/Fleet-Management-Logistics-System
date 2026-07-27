@@ -1,0 +1,1337 @@
+ActivityID,JobID,ActivityNo,ActivityTypeID,DiagnosticResult,RepeatFault,WarrantyIndicator,ActivityStatus
+1,1,1,9,Engine oil replacement,False,False,Completed
+2,1,2,6,Routine preventive maintenance,True,False,Completed
+3,1,3,4,Routine preventive maintenance,True,False,Completed
+4,1,4,2,Cooling system checked,True,False,Completed
+5,1,5,8,Normal wear detected,True,False,Completed
+6,2,1,8,Routine preventive maintenance,True,False,Completed
+7,2,2,2,Cooling system checked,True,False,Pending
+8,2,3,7,Routine preventive maintenance,True,False,Pending
+9,3,1,3,Brake system inspection,True,False,Completed
+10,3,2,5,Brake system inspection,True,False,In Progress
+11,3,3,2,Electrical fault identified,False,False,In Progress
+12,4,1,7,Brake system inspection,True,False,Completed
+13,4,2,6,Normal wear detected,True,False,In Progress
+14,5,1,1,Routine preventive maintenance,True,False,Pending
+15,5,2,11,Routine preventive maintenance,False,False,Completed
+16,5,3,7,Routine preventive maintenance,False,False,Completed
+17,5,4,11,Tyre replacement required,True,False,Completed
+18,6,1,5,Brake system inspection,True,False,Completed
+19,6,2,10,Routine preventive maintenance,False,False,Pending
+20,7,1,8,Cooling system checked,True,False,Completed
+21,7,2,6,Cooling system checked,True,False,In Progress
+22,7,3,5,Cooling system checked,True,False,Completed
+23,8,1,1,Normal wear detected,True,False,Completed
+24,8,2,8,Engine oil replacement,True,False,Pending
+25,8,3,9,Brake system inspection,True,False,Completed
+26,9,1,10,Engine oil replacement,True,False,Completed
+27,9,2,12,Routine preventive maintenance,True,False,Completed
+28,10,1,12,Electrical fault identified,True,False,Completed
+29,10,2,9,Tyre replacement required,True,False,Pending
+30,11,1,2,Brake system inspection,True,False,In Progress
+31,11,2,5,Routine preventive maintenance,True,False,Completed
+32,11,3,1,Brake system inspection,False,False,Completed
+33,11,4,5,Electrical fault identified,True,False,Pending
+34,11,5,2,Brake system inspection,True,False,Completed
+35,11,6,9,Electrical fault identified,True,False,Pending
+36,12,1,8,Tyre replacement required,True,False,Completed
+37,12,2,6,Electrical fault identified,True,False,Completed
+38,12,3,4,Routine preventive maintenance,True,False,Completed
+39,12,4,4,Routine preventive maintenance,True,False,Completed
+40,12,5,3,Electrical fault identified,True,False,Completed
+41,13,1,3,Tyre replacement required,True,False,Completed
+42,13,2,1,Brake system inspection,True,False,Completed
+43,13,3,3,Electrical fault identified,False,False,Completed
+44,13,4,12,Cooling system checked,True,False,In Progress
+45,13,5,11,Normal wear detected,True,False,Completed
+46,13,6,7,Tyre replacement required,True,False,Completed
+47,14,1,9,Brake system inspection,True,False,Pending
+48,14,2,7,Electrical fault identified,True,False,Completed
+49,14,3,4,Electrical fault identified,True,False,Completed
+50,14,4,10,Engine oil replacement,True,False,Completed
+51,14,5,10,Tyre replacement required,True,False,Completed
+52,15,1,4,Cooling system checked,True,False,Completed
+53,15,2,9,Normal wear detected,True,False,Completed
+54,15,3,9,Cooling system checked,False,False,Completed
+55,16,1,6,Tyre replacement required,True,False,Completed
+56,16,2,4,Electrical fault identified,False,False,Pending
+57,16,3,10,Tyre replacement required,True,False,Completed
+58,16,4,2,Routine preventive maintenance,True,False,In Progress
+59,16,5,8,Engine oil replacement,True,False,Pending
+60,17,1,5,Brake system inspection,False,False,Pending
+61,17,2,4,Tyre replacement required,True,False,Completed
+62,17,3,1,Tyre replacement required,True,False,Completed
+63,17,4,3,Electrical fault identified,True,False,Pending
+64,17,5,7,Electrical fault identified,False,False,Pending
+65,18,1,1,Electrical fault identified,True,False,Completed
+66,18,2,8,Cooling system checked,True,False,Completed
+67,18,3,7,Electrical fault identified,True,False,Pending
+68,19,1,11,Tyre replacement required,True,False,Pending
+69,19,2,7,Brake system inspection,True,False,In Progress
+70,19,3,5,Brake system inspection,True,False,Completed
+71,19,4,3,Routine preventive maintenance,False,True,Completed
+72,19,5,4,Routine preventive maintenance,True,False,Completed
+73,20,1,7,Brake system inspection,True,False,Completed
+74,20,2,3,Engine oil replacement,True,False,Pending
+75,20,3,4,Engine oil replacement,True,False,Completed
+76,20,4,5,Tyre replacement required,True,False,Completed
+77,20,5,4,Engine oil replacement,True,False,Completed
+78,20,6,1,Brake system inspection,False,False,Completed
+79,21,1,1,Normal wear detected,True,False,Completed
+80,21,2,8,Electrical fault identified,True,False,Pending
+81,21,3,10,Brake system inspection,True,False,Completed
+82,21,4,11,Cooling system checked,True,True,Completed
+83,21,5,1,Brake system inspection,True,True,Pending
+84,22,1,1,Brake system inspection,True,False,Pending
+85,22,2,7,Routine preventive maintenance,True,False,Completed
+86,23,1,1,Cooling system checked,True,False,Completed
+87,23,2,12,Brake system inspection,False,False,Completed
+88,23,3,12,Normal wear detected,True,False,Completed
+89,23,4,9,Tyre replacement required,True,True,Completed
+90,23,5,7,Electrical fault identified,False,True,Completed
+91,23,6,12,Normal wear detected,True,False,Pending
+92,24,1,9,Electrical fault identified,False,False,Completed
+93,24,2,4,Engine oil replacement,True,False,In Progress
+94,24,3,1,Electrical fault identified,True,False,Completed
+95,24,4,10,Routine preventive maintenance,True,False,In Progress
+96,24,5,9,Cooling system checked,True,False,Pending
+97,25,1,5,Tyre replacement required,False,False,In Progress
+98,25,2,7,Routine preventive maintenance,True,False,Completed
+99,25,3,11,Electrical fault identified,True,True,Completed
+100,25,4,2,Electrical fault identified,True,False,Pending
+101,26,1,1,Normal wear detected,True,False,Completed
+102,26,2,1,Normal wear detected,True,False,Completed
+103,26,3,12,Routine preventive maintenance,True,False,Pending
+104,26,4,1,Routine preventive maintenance,True,False,Completed
+105,26,5,1,Normal wear detected,True,True,Pending
+106,26,6,6,Routine preventive maintenance,True,True,Completed
+107,27,1,9,Normal wear detected,True,False,Pending
+108,27,2,11,Cooling system checked,True,False,Completed
+109,28,1,1,Normal wear detected,True,False,Completed
+110,28,2,6,Routine preventive maintenance,True,False,Completed
+111,28,3,6,Electrical fault identified,True,False,Completed
+112,29,1,3,Normal wear detected,True,False,In Progress
+113,29,2,10,Engine oil replacement,True,False,Pending
+114,29,3,9,Cooling system checked,False,False,In Progress
+115,30,1,2,Electrical fault identified,True,False,Pending
+116,30,2,7,Tyre replacement required,True,False,Completed
+117,31,1,4,Cooling system checked,True,False,Completed
+118,31,2,11,Electrical fault identified,False,False,Pending
+119,31,3,7,Routine preventive maintenance,True,False,Completed
+120,31,4,5,Engine oil replacement,False,False,Completed
+121,31,5,9,Brake system inspection,False,False,Completed
+122,31,6,1,Tyre replacement required,False,False,Completed
+123,32,1,3,Cooling system checked,True,False,In Progress
+124,32,2,11,Normal wear detected,False,False,Pending
+125,32,3,2,Engine oil replacement,True,True,Completed
+126,32,4,7,Engine oil replacement,True,False,Pending
+127,32,5,1,Normal wear detected,False,False,Completed
+128,32,6,11,Routine preventive maintenance,True,False,Completed
+129,33,1,9,Cooling system checked,True,False,Completed
+130,33,2,5,Routine preventive maintenance,True,False,Completed
+131,34,1,2,Electrical fault identified,True,False,Completed
+132,34,2,5,Engine oil replacement,True,False,Completed
+133,34,3,10,Electrical fault identified,True,False,Completed
+134,34,4,12,Brake system inspection,True,False,In Progress
+135,35,1,3,Brake system inspection,True,False,Completed
+136,35,2,7,Normal wear detected,True,False,In Progress
+137,35,3,5,Tyre replacement required,True,False,Completed
+138,35,4,9,Cooling system checked,False,True,Pending
+139,36,1,6,Cooling system checked,True,False,Completed
+140,36,2,8,Routine preventive maintenance,True,False,In Progress
+141,36,3,1,Tyre replacement required,True,True,Pending
+142,37,1,3,Normal wear detected,True,False,Completed
+143,37,2,1,Brake system inspection,True,False,Completed
+144,37,3,4,Electrical fault identified,True,False,Completed
+145,37,4,12,Brake system inspection,True,False,Completed
+146,37,5,5,Normal wear detected,False,False,In Progress
+147,37,6,3,Cooling system checked,True,False,Pending
+148,38,1,3,Cooling system checked,True,False,Completed
+149,38,2,10,Electrical fault identified,True,False,Completed
+150,38,3,11,Cooling system checked,True,False,Completed
+151,38,4,12,Cooling system checked,True,False,Completed
+152,39,1,9,Electrical fault identified,True,True,Completed
+153,39,2,4,Electrical fault identified,True,False,Completed
+154,39,3,1,Routine preventive maintenance,True,False,Completed
+155,39,4,8,Engine oil replacement,False,True,Pending
+156,40,1,10,Engine oil replacement,True,False,Completed
+157,40,2,10,Routine preventive maintenance,False,False,Pending
+158,40,3,12,Tyre replacement required,True,False,Completed
+159,40,4,3,Tyre replacement required,False,False,Completed
+160,41,1,2,Routine preventive maintenance,True,False,Completed
+161,41,2,5,Routine preventive maintenance,True,False,Completed
+162,42,1,11,Engine oil replacement,True,False,Completed
+163,42,2,2,Tyre replacement required,True,False,Completed
+164,43,1,6,Normal wear detected,False,False,Completed
+165,43,2,8,Routine preventive maintenance,True,False,Completed
+166,44,1,7,Engine oil replacement,True,False,Completed
+167,44,2,4,Brake system inspection,True,False,Completed
+168,44,3,7,Cooling system checked,False,False,Completed
+169,44,4,1,Electrical fault identified,True,False,Completed
+170,44,5,2,Brake system inspection,True,False,Completed
+171,44,6,10,Routine preventive maintenance,True,False,Completed
+172,45,1,2,Brake system inspection,True,False,In Progress
+173,45,2,9,Routine preventive maintenance,True,False,Completed
+174,45,3,12,Cooling system checked,True,False,In Progress
+175,45,4,10,Electrical fault identified,True,False,In Progress
+176,45,5,11,Normal wear detected,True,False,In Progress
+177,46,1,10,Normal wear detected,True,True,Completed
+178,46,2,1,Engine oil replacement,True,False,Completed
+179,46,3,7,Normal wear detected,True,False,Completed
+180,46,4,4,Engine oil replacement,True,False,Completed
+181,47,1,9,Cooling system checked,True,False,Completed
+182,47,2,5,Routine preventive maintenance,True,False,Completed
+183,47,3,10,Electrical fault identified,True,False,Completed
+184,48,1,11,Engine oil replacement,True,False,Completed
+185,48,2,10,Routine preventive maintenance,True,False,In Progress
+186,48,3,12,Tyre replacement required,True,False,Completed
+187,49,1,5,Normal wear detected,True,False,In Progress
+188,49,2,9,Routine preventive maintenance,True,False,In Progress
+189,49,3,11,Tyre replacement required,True,False,In Progress
+190,49,4,12,Engine oil replacement,True,False,Completed
+191,50,1,8,Cooling system checked,True,False,Completed
+192,50,2,7,Engine oil replacement,True,False,Completed
+193,51,1,8,Engine oil replacement,True,False,Completed
+194,51,2,12,Tyre replacement required,True,False,Completed
+195,51,3,12,Electrical fault identified,False,False,Completed
+196,51,4,6,Normal wear detected,True,False,Completed
+197,51,5,4,Tyre replacement required,True,False,Completed
+198,51,6,3,Cooling system checked,True,False,In Progress
+199,52,1,1,Brake system inspection,False,False,Completed
+200,52,2,8,Routine preventive maintenance,True,True,Completed
+201,52,3,10,Electrical fault identified,True,False,Completed
+202,52,4,4,Cooling system checked,True,False,Pending
+203,53,1,7,Brake system inspection,True,False,Completed
+204,53,2,6,Engine oil replacement,True,False,In Progress
+205,53,3,11,Normal wear detected,True,False,Pending
+206,53,4,2,Normal wear detected,True,False,Completed
+207,53,5,9,Normal wear detected,True,False,In Progress
+208,54,1,9,Electrical fault identified,True,False,Completed
+209,54,2,1,Tyre replacement required,True,False,In Progress
+210,54,3,4,Cooling system checked,False,False,Pending
+211,54,4,3,Routine preventive maintenance,True,False,Completed
+212,55,1,2,Routine preventive maintenance,False,True,In Progress
+213,55,2,11,Electrical fault identified,True,True,Completed
+214,56,1,5,Electrical fault identified,True,False,In Progress
+215,56,2,4,Brake system inspection,True,True,Completed
+216,56,3,8,Normal wear detected,True,True,In Progress
+217,56,4,10,Cooling system checked,True,False,In Progress
+218,57,1,6,Cooling system checked,True,False,Completed
+219,57,2,7,Normal wear detected,True,False,Completed
+220,58,1,1,Cooling system checked,True,True,In Progress
+221,58,2,11,Tyre replacement required,False,False,Completed
+222,58,3,4,Routine preventive maintenance,False,False,In Progress
+223,58,4,9,Cooling system checked,True,False,Completed
+224,58,5,11,Normal wear detected,True,False,Completed
+225,58,6,6,Cooling system checked,False,False,Pending
+226,59,1,10,Brake system inspection,True,False,Pending
+227,59,2,4,Cooling system checked,True,False,Completed
+228,59,3,6,Electrical fault identified,True,False,Completed
+229,59,4,4,Engine oil replacement,False,False,Completed
+230,59,5,10,Brake system inspection,True,False,Pending
+231,60,1,4,Routine preventive maintenance,True,False,Pending
+232,60,2,6,Normal wear detected,True,False,Completed
+233,60,3,9,Electrical fault identified,True,False,In Progress
+234,60,4,1,Engine oil replacement,False,False,Pending
+235,61,1,3,Normal wear detected,False,False,Pending
+236,61,2,5,Normal wear detected,True,False,Completed
+237,61,3,1,Cooling system checked,True,False,Pending
+238,62,1,3,Tyre replacement required,True,False,Completed
+239,62,2,4,Cooling system checked,True,False,Completed
+240,62,3,1,Tyre replacement required,True,False,In Progress
+241,63,1,1,Brake system inspection,True,False,Completed
+242,63,2,2,Brake system inspection,True,False,Completed
+243,63,3,8,Engine oil replacement,True,False,Completed
+244,63,4,9,Brake system inspection,True,False,In Progress
+245,64,1,8,Engine oil replacement,True,False,Completed
+246,64,2,12,Engine oil replacement,True,False,In Progress
+247,64,3,12,Routine preventive maintenance,True,False,Completed
+248,64,4,12,Tyre replacement required,True,False,Completed
+249,64,5,4,Cooling system checked,True,False,Completed
+250,65,1,3,Brake system inspection,True,True,In Progress
+251,65,2,10,Tyre replacement required,True,False,Completed
+252,66,1,11,Cooling system checked,True,False,Completed
+253,66,2,4,Routine preventive maintenance,True,True,In Progress
+254,66,3,3,Electrical fault identified,True,False,In Progress
+255,66,4,6,Routine preventive maintenance,True,False,Completed
+256,66,5,11,Electrical fault identified,True,False,In Progress
+257,66,6,9,Cooling system checked,False,False,Completed
+258,67,1,2,Engine oil replacement,True,False,In Progress
+259,67,2,10,Electrical fault identified,False,False,Completed
+260,67,3,3,Routine preventive maintenance,True,False,Completed
+261,68,1,4,Brake system inspection,True,False,Completed
+262,68,2,10,Routine preventive maintenance,True,False,Completed
+263,68,3,10,Tyre replacement required,True,False,Completed
+264,68,4,11,Brake system inspection,False,False,Pending
+265,68,5,12,Engine oil replacement,True,False,Completed
+266,69,1,9,Electrical fault identified,True,False,Pending
+267,69,2,4,Brake system inspection,False,False,Completed
+268,70,1,12,Brake system inspection,True,False,Pending
+269,70,2,11,Normal wear detected,False,False,Completed
+270,70,3,9,Brake system inspection,True,False,Completed
+271,71,1,9,Engine oil replacement,False,False,Completed
+272,71,2,3,Brake system inspection,True,False,Completed
+273,72,1,9,Normal wear detected,True,False,Completed
+274,72,2,9,Normal wear detected,True,True,In Progress
+275,72,3,7,Routine preventive maintenance,True,False,Completed
+276,73,1,9,Electrical fault identified,True,True,Completed
+277,73,2,7,Normal wear detected,True,False,Completed
+278,73,3,12,Normal wear detected,True,False,In Progress
+279,73,4,10,Brake system inspection,False,False,Completed
+280,73,5,6,Engine oil replacement,True,False,Completed
+281,74,1,8,Brake system inspection,True,False,Completed
+282,74,2,1,Tyre replacement required,True,True,Completed
+283,75,1,3,Cooling system checked,True,False,In Progress
+284,75,2,10,Tyre replacement required,True,False,In Progress
+285,75,3,3,Brake system inspection,True,False,Completed
+286,75,4,7,Cooling system checked,True,False,Completed
+287,76,1,1,Brake system inspection,False,False,In Progress
+288,76,2,8,Tyre replacement required,True,True,Completed
+289,77,1,3,Electrical fault identified,True,False,Pending
+290,77,2,4,Tyre replacement required,True,False,Completed
+291,77,3,7,Cooling system checked,False,False,Completed
+292,77,4,11,Electrical fault identified,True,False,Completed
+293,77,5,6,Electrical fault identified,False,False,Completed
+294,77,6,5,Electrical fault identified,True,False,Completed
+295,78,1,8,Engine oil replacement,True,False,Completed
+296,78,2,8,Normal wear detected,True,False,Pending
+297,78,3,6,Engine oil replacement,True,False,Completed
+298,78,4,5,Engine oil replacement,True,False,In Progress
+299,78,5,11,Cooling system checked,True,False,In Progress
+300,79,1,4,Normal wear detected,True,False,Completed
+301,79,2,12,Cooling system checked,True,False,Completed
+302,79,3,5,Electrical fault identified,True,False,Completed
+303,79,4,3,Brake system inspection,True,False,Completed
+304,79,5,7,Normal wear detected,True,False,Completed
+305,80,1,10,Engine oil replacement,True,False,Completed
+306,80,2,2,Routine preventive maintenance,True,False,Completed
+307,81,1,5,Tyre replacement required,True,True,Completed
+308,81,2,11,Cooling system checked,True,True,In Progress
+309,81,3,11,Normal wear detected,False,False,Completed
+310,81,4,12,Electrical fault identified,True,False,Completed
+311,82,1,10,Routine preventive maintenance,True,False,Completed
+312,82,2,5,Brake system inspection,False,False,In Progress
+313,82,3,4,Engine oil replacement,False,False,In Progress
+314,82,4,1,Engine oil replacement,True,False,Pending
+315,82,5,9,Engine oil replacement,True,False,Completed
+316,82,6,5,Normal wear detected,True,False,Completed
+317,83,1,7,Electrical fault identified,True,True,In Progress
+318,83,2,4,Tyre replacement required,True,False,Completed
+319,83,3,8,Routine preventive maintenance,True,False,Pending
+320,83,4,10,Engine oil replacement,True,False,Completed
+321,83,5,8,Normal wear detected,True,True,Pending
+322,83,6,12,Brake system inspection,True,False,In Progress
+323,84,1,10,Electrical fault identified,True,False,Completed
+324,84,2,3,Engine oil replacement,True,False,Completed
+325,84,3,3,Engine oil replacement,True,False,In Progress
+326,85,1,6,Tyre replacement required,True,False,In Progress
+327,85,2,10,Brake system inspection,True,False,Pending
+328,85,3,4,Engine oil replacement,True,True,Completed
+329,86,1,9,Engine oil replacement,True,False,Completed
+330,86,2,6,Brake system inspection,False,False,Completed
+331,86,3,11,Routine preventive maintenance,False,False,In Progress
+332,86,4,12,Tyre replacement required,True,False,Completed
+333,86,5,12,Cooling system checked,True,False,Completed
+334,87,1,3,Tyre replacement required,True,False,In Progress
+335,87,2,5,Routine preventive maintenance,True,False,In Progress
+336,87,3,9,Brake system inspection,True,False,Completed
+337,87,4,7,Cooling system checked,True,True,Completed
+338,87,5,7,Cooling system checked,True,True,Completed
+339,87,6,10,Brake system inspection,True,False,Completed
+340,88,1,2,Electrical fault identified,True,False,Completed
+341,88,2,3,Brake system inspection,True,True,Completed
+342,88,3,7,Engine oil replacement,False,False,Completed
+343,88,4,1,Normal wear detected,True,True,Completed
+344,89,1,6,Cooling system checked,True,False,Completed
+345,89,2,2,Brake system inspection,True,False,Pending
+346,89,3,9,Brake system inspection,True,False,In Progress
+347,90,1,9,Normal wear detected,True,False,In Progress
+348,90,2,9,Cooling system checked,True,False,In Progress
+349,90,3,6,Routine preventive maintenance,True,False,In Progress
+350,91,1,8,Normal wear detected,False,False,Completed
+351,91,2,2,Electrical fault identified,True,False,Completed
+352,91,3,7,Routine preventive maintenance,True,False,Completed
+353,92,1,6,Brake system inspection,True,False,In Progress
+354,92,2,3,Electrical fault identified,False,False,Completed
+355,92,3,11,Tyre replacement required,False,False,Completed
+356,92,4,8,Normal wear detected,True,False,Completed
+357,92,5,5,Engine oil replacement,True,False,Completed
+358,93,1,1,Normal wear detected,True,False,Completed
+359,93,2,6,Tyre replacement required,True,True,Completed
+360,93,3,6,Engine oil replacement,True,False,Completed
+361,93,4,8,Brake system inspection,True,False,In Progress
+362,93,5,1,Engine oil replacement,True,False,In Progress
+363,94,1,2,Cooling system checked,True,False,Completed
+364,94,2,11,Electrical fault identified,False,False,Completed
+365,94,3,3,Engine oil replacement,True,False,In Progress
+366,94,4,7,Brake system inspection,True,False,Pending
+367,94,5,8,Tyre replacement required,True,True,Completed
+368,94,6,1,Normal wear detected,True,False,Completed
+369,95,1,11,Engine oil replacement,True,False,In Progress
+370,95,2,1,Cooling system checked,True,True,Completed
+371,96,1,6,Normal wear detected,True,False,Completed
+372,96,2,2,Normal wear detected,False,False,Completed
+373,96,3,9,Engine oil replacement,True,True,In Progress
+374,96,4,1,Cooling system checked,False,False,In Progress
+375,97,1,3,Engine oil replacement,True,False,Completed
+376,97,2,12,Brake system inspection,False,False,Completed
+377,97,3,7,Tyre replacement required,True,False,Completed
+378,97,4,3,Cooling system checked,True,False,Completed
+379,97,5,8,Cooling system checked,True,False,Completed
+380,98,1,2,Cooling system checked,True,False,In Progress
+381,98,2,1,Routine preventive maintenance,True,False,In Progress
+382,98,3,5,Cooling system checked,True,False,Completed
+383,99,1,7,Brake system inspection,False,False,Pending
+384,99,2,8,Tyre replacement required,False,False,Completed
+385,99,3,1,Electrical fault identified,True,True,Completed
+386,99,4,10,Engine oil replacement,True,False,Completed
+387,99,5,7,Engine oil replacement,True,False,Completed
+388,99,6,4,Cooling system checked,True,False,Completed
+389,100,1,7,Engine oil replacement,False,False,Pending
+390,100,2,10,Cooling system checked,True,False,In Progress
+391,100,3,8,Electrical fault identified,True,False,Completed
+392,100,4,11,Engine oil replacement,True,False,Completed
+393,100,5,5,Cooling system checked,True,False,Completed
+394,100,6,9,Brake system inspection,True,False,Completed
+395,101,1,4,Electrical fault identified,True,False,Completed
+396,101,2,3,Routine preventive maintenance,False,False,Pending
+397,101,3,11,Normal wear detected,False,False,In Progress
+398,101,4,9,Tyre replacement required,True,False,Completed
+399,101,5,5,Tyre replacement required,False,False,Pending
+400,102,1,9,Brake system inspection,True,True,Completed
+401,102,2,8,Brake system inspection,False,False,Completed
+402,103,1,4,Tyre replacement required,True,False,Completed
+403,103,2,2,Normal wear detected,True,False,Completed
+404,103,3,8,Normal wear detected,True,False,Pending
+405,103,4,8,Brake system inspection,True,False,In Progress
+406,104,1,10,Electrical fault identified,True,False,Pending
+407,104,2,9,Tyre replacement required,True,False,Completed
+408,104,3,6,Electrical fault identified,True,False,Completed
+409,105,1,7,Electrical fault identified,False,False,In Progress
+410,105,2,8,Electrical fault identified,False,False,Completed
+411,105,3,1,Electrical fault identified,False,False,Pending
+412,106,1,7,Tyre replacement required,True,False,Completed
+413,106,2,11,Routine preventive maintenance,False,False,Completed
+414,106,3,5,Normal wear detected,True,False,Completed
+415,106,4,10,Cooling system checked,True,False,Pending
+416,106,5,4,Cooling system checked,True,True,Completed
+417,106,6,6,Engine oil replacement,True,False,Completed
+418,107,1,4,Routine preventive maintenance,True,False,Completed
+419,107,2,10,Tyre replacement required,True,True,Completed
+420,107,3,12,Electrical fault identified,True,False,Completed
+421,107,4,12,Electrical fault identified,True,False,In Progress
+422,108,1,7,Engine oil replacement,False,False,Completed
+423,108,2,11,Routine preventive maintenance,False,False,Completed
+424,109,1,8,Cooling system checked,True,False,Completed
+425,109,2,10,Normal wear detected,False,False,In Progress
+426,109,3,3,Engine oil replacement,True,False,In Progress
+427,109,4,12,Routine preventive maintenance,True,True,Completed
+428,109,5,12,Brake system inspection,True,False,Completed
+429,109,6,9,Brake system inspection,True,False,Completed
+430,110,1,9,Routine preventive maintenance,False,False,Completed
+431,110,2,8,Tyre replacement required,True,False,Completed
+432,110,3,3,Cooling system checked,False,False,Pending
+433,110,4,9,Tyre replacement required,True,False,Completed
+434,111,1,10,Brake system inspection,True,False,In Progress
+435,111,2,10,Normal wear detected,False,False,Completed
+436,111,3,8,Tyre replacement required,True,True,Completed
+437,111,4,8,Brake system inspection,True,False,In Progress
+438,111,5,3,Engine oil replacement,True,False,Completed
+439,112,1,7,Brake system inspection,True,True,Completed
+440,112,2,5,Engine oil replacement,True,True,Completed
+441,112,3,3,Cooling system checked,True,False,Completed
+442,112,4,8,Cooling system checked,False,False,Completed
+443,112,5,3,Routine preventive maintenance,True,False,Completed
+444,112,6,7,Routine preventive maintenance,False,False,Completed
+445,113,1,2,Tyre replacement required,True,False,Completed
+446,113,2,10,Routine preventive maintenance,True,False,Pending
+447,113,3,8,Normal wear detected,True,False,Completed
+448,113,4,1,Routine preventive maintenance,False,True,Completed
+449,113,5,2,Brake system inspection,True,False,In Progress
+450,113,6,2,Engine oil replacement,True,False,Completed
+451,114,1,7,Electrical fault identified,True,True,In Progress
+452,114,2,4,Normal wear detected,True,False,Completed
+453,114,3,10,Engine oil replacement,True,False,Completed
+454,115,1,5,Cooling system checked,True,False,Completed
+455,115,2,11,Electrical fault identified,True,False,Completed
+456,115,3,9,Electrical fault identified,True,False,Completed
+457,115,4,11,Routine preventive maintenance,True,True,Pending
+458,115,5,1,Electrical fault identified,True,False,In Progress
+459,116,1,5,Tyre replacement required,False,False,In Progress
+460,116,2,5,Normal wear detected,True,False,Completed
+461,116,3,11,Engine oil replacement,True,False,Completed
+462,116,4,10,Electrical fault identified,True,False,In Progress
+463,116,5,1,Normal wear detected,True,False,Completed
+464,117,1,7,Brake system inspection,True,False,Pending
+465,117,2,7,Tyre replacement required,True,False,In Progress
+466,117,3,5,Engine oil replacement,True,False,Completed
+467,117,4,10,Electrical fault identified,True,False,Completed
+468,117,5,11,Brake system inspection,True,False,Completed
+469,117,6,10,Routine preventive maintenance,True,True,Completed
+470,118,1,4,Tyre replacement required,True,False,In Progress
+471,118,2,3,Normal wear detected,True,False,Completed
+472,118,3,7,Tyre replacement required,True,False,In Progress
+473,118,4,8,Cooling system checked,True,False,Pending
+474,118,5,2,Normal wear detected,True,False,Completed
+475,118,6,6,Tyre replacement required,True,False,Completed
+476,119,1,11,Routine preventive maintenance,True,False,Pending
+477,119,2,4,Tyre replacement required,False,False,Completed
+478,119,3,12,Brake system inspection,True,False,Completed
+479,119,4,10,Normal wear detected,True,False,Completed
+480,120,1,11,Brake system inspection,True,False,Completed
+481,120,2,1,Normal wear detected,True,False,Completed
+482,120,3,4,Engine oil replacement,True,False,Pending
+483,120,4,6,Brake system inspection,True,False,In Progress
+484,120,5,7,Cooling system checked,True,False,Completed
+485,120,6,7,Cooling system checked,True,False,In Progress
+486,121,1,4,Normal wear detected,True,False,Completed
+487,121,2,4,Normal wear detected,False,True,Completed
+488,121,3,8,Tyre replacement required,False,False,Completed
+489,121,4,3,Cooling system checked,True,False,Pending
+490,122,1,5,Routine preventive maintenance,True,False,In Progress
+491,122,2,3,Engine oil replacement,True,False,Completed
+492,122,3,1,Routine preventive maintenance,True,False,In Progress
+493,122,4,1,Normal wear detected,True,False,Completed
+494,122,5,10,Normal wear detected,False,False,Completed
+495,122,6,9,Engine oil replacement,True,False,Completed
+496,123,1,10,Normal wear detected,True,False,Completed
+497,123,2,1,Cooling system checked,True,False,Completed
+498,123,3,11,Normal wear detected,False,False,Pending
+499,123,4,4,Cooling system checked,True,False,Completed
+500,124,1,8,Tyre replacement required,True,False,Completed
+501,124,2,5,Electrical fault identified,True,False,Completed
+502,124,3,5,Routine preventive maintenance,False,False,Completed
+503,124,4,9,Routine preventive maintenance,True,False,Completed
+504,125,1,12,Normal wear detected,True,False,Completed
+505,125,2,9,Brake system inspection,True,False,Completed
+506,125,3,2,Tyre replacement required,True,False,Pending
+507,125,4,1,Electrical fault identified,True,False,Completed
+508,126,1,11,Tyre replacement required,False,False,Completed
+509,126,2,12,Brake system inspection,True,False,Completed
+510,126,3,1,Routine preventive maintenance,True,False,Completed
+511,126,4,1,Brake system inspection,False,False,Completed
+512,126,5,11,Normal wear detected,True,False,Completed
+513,126,6,12,Electrical fault identified,False,True,Pending
+514,127,1,12,Normal wear detected,True,False,Completed
+515,127,2,3,Engine oil replacement,True,False,Completed
+516,128,1,3,Tyre replacement required,False,False,In Progress
+517,128,2,10,Engine oil replacement,True,False,Pending
+518,128,3,11,Engine oil replacement,True,False,Completed
+519,128,4,12,Routine preventive maintenance,False,True,In Progress
+520,128,5,4,Normal wear detected,True,False,Completed
+521,128,6,1,Electrical fault identified,True,False,Completed
+522,129,1,5,Routine preventive maintenance,True,False,Pending
+523,129,2,12,Routine preventive maintenance,True,False,Completed
+524,130,1,2,Routine preventive maintenance,True,False,Completed
+525,130,2,4,Cooling system checked,True,False,Completed
+526,130,3,7,Cooling system checked,True,False,Pending
+527,130,4,2,Tyre replacement required,True,False,Completed
+528,130,5,7,Tyre replacement required,True,False,Completed
+529,130,6,9,Brake system inspection,True,False,Completed
+530,131,1,9,Tyre replacement required,True,False,Completed
+531,131,2,6,Electrical fault identified,True,False,In Progress
+532,131,3,2,Tyre replacement required,True,False,In Progress
+533,131,4,5,Cooling system checked,True,False,Completed
+534,132,1,1,Routine preventive maintenance,False,False,In Progress
+535,132,2,8,Engine oil replacement,True,False,Completed
+536,132,3,1,Electrical fault identified,True,False,Completed
+537,132,4,9,Tyre replacement required,False,False,Completed
+538,132,5,8,Routine preventive maintenance,False,False,Completed
+539,132,6,5,Tyre replacement required,True,True,In Progress
+540,133,1,11,Normal wear detected,False,False,Completed
+541,133,2,7,Cooling system checked,False,False,Pending
+542,133,3,12,Brake system inspection,True,False,Completed
+543,133,4,8,Routine preventive maintenance,True,False,In Progress
+544,133,5,8,Electrical fault identified,False,False,Completed
+545,133,6,3,Routine preventive maintenance,False,False,In Progress
+546,134,1,3,Cooling system checked,True,False,Completed
+547,134,2,12,Tyre replacement required,True,False,Completed
+548,134,3,9,Routine preventive maintenance,True,False,In Progress
+549,134,4,4,Brake system inspection,True,False,Completed
+550,135,1,2,Engine oil replacement,True,False,Completed
+551,135,2,3,Electrical fault identified,True,False,Completed
+552,135,3,5,Brake system inspection,False,False,Completed
+553,136,1,9,Routine preventive maintenance,False,False,Completed
+554,136,2,12,Cooling system checked,True,False,Completed
+555,137,1,2,Normal wear detected,True,False,Completed
+556,137,2,6,Electrical fault identified,True,False,Completed
+557,137,3,12,Electrical fault identified,True,False,Completed
+558,138,1,2,Routine preventive maintenance,True,False,In Progress
+559,138,2,4,Cooling system checked,True,False,Completed
+560,138,3,7,Engine oil replacement,True,False,In Progress
+561,138,4,8,Routine preventive maintenance,True,False,In Progress
+562,138,5,6,Cooling system checked,True,False,Pending
+563,138,6,10,Tyre replacement required,True,True,Completed
+564,139,1,8,Cooling system checked,True,False,Completed
+565,139,2,12,Engine oil replacement,True,True,Pending
+566,139,3,2,Engine oil replacement,True,True,Completed
+567,139,4,12,Routine preventive maintenance,False,False,In Progress
+568,140,1,5,Tyre replacement required,True,False,Completed
+569,140,2,3,Brake system inspection,False,False,In Progress
+570,140,3,6,Brake system inspection,True,False,Completed
+571,140,4,2,Routine preventive maintenance,False,False,Completed
+572,141,1,3,Brake system inspection,True,False,In Progress
+573,141,2,3,Cooling system checked,True,False,Pending
+574,141,3,6,Tyre replacement required,True,True,Completed
+575,141,4,10,Brake system inspection,False,False,Completed
+576,142,1,6,Routine preventive maintenance,True,False,Completed
+577,142,2,9,Cooling system checked,False,False,Completed
+578,142,3,4,Engine oil replacement,False,False,Completed
+579,143,1,7,Routine preventive maintenance,True,False,Completed
+580,143,2,7,Electrical fault identified,True,False,Completed
+581,143,3,12,Electrical fault identified,True,False,Pending
+582,144,1,5,Cooling system checked,True,False,Completed
+583,144,2,6,Cooling system checked,True,False,Completed
+584,144,3,3,Cooling system checked,True,False,In Progress
+585,144,4,6,Normal wear detected,True,False,In Progress
+586,144,5,2,Cooling system checked,True,False,Completed
+587,145,1,2,Routine preventive maintenance,True,False,Completed
+588,145,2,3,Normal wear detected,True,False,Completed
+589,145,3,6,Cooling system checked,False,False,Pending
+590,146,1,6,Cooling system checked,True,False,In Progress
+591,146,2,6,Tyre replacement required,True,False,Completed
+592,146,3,1,Tyre replacement required,True,False,Completed
+593,146,4,9,Routine preventive maintenance,True,False,Completed
+594,146,5,6,Normal wear detected,True,False,Completed
+595,146,6,11,Routine preventive maintenance,False,False,In Progress
+596,147,1,1,Routine preventive maintenance,True,False,Pending
+597,147,2,3,Cooling system checked,True,False,Completed
+598,147,3,11,Cooling system checked,True,False,In Progress
+599,147,4,1,Brake system inspection,False,False,Completed
+600,147,5,10,Tyre replacement required,False,False,Completed
+601,148,1,8,Cooling system checked,True,False,Completed
+602,148,2,2,Engine oil replacement,True,False,Completed
+603,148,3,5,Cooling system checked,False,False,In Progress
+604,148,4,12,Normal wear detected,True,False,Pending
+605,149,1,9,Tyre replacement required,True,False,Completed
+606,149,2,10,Routine preventive maintenance,True,True,Completed
+607,149,3,11,Tyre replacement required,True,False,In Progress
+608,150,1,7,Tyre replacement required,True,False,Completed
+609,150,2,1,Routine preventive maintenance,True,False,Completed
+610,151,1,2,Electrical fault identified,True,False,Pending
+611,151,2,3,Routine preventive maintenance,True,False,Completed
+612,151,3,11,Brake system inspection,True,True,Pending
+613,151,4,6,Cooling system checked,False,False,In Progress
+614,152,1,9,Engine oil replacement,True,False,Completed
+615,152,2,12,Brake system inspection,False,False,Completed
+616,152,3,9,Brake system inspection,True,False,In Progress
+617,152,4,4,Cooling system checked,True,True,Completed
+618,152,5,11,Electrical fault identified,True,False,Completed
+619,152,6,6,Electrical fault identified,True,True,Completed
+620,153,1,1,Engine oil replacement,True,False,Completed
+621,153,2,11,Engine oil replacement,True,False,In Progress
+622,153,3,5,Tyre replacement required,True,False,In Progress
+623,153,4,12,Electrical fault identified,True,False,Completed
+624,153,5,6,Normal wear detected,True,False,In Progress
+625,153,6,8,Cooling system checked,True,False,In Progress
+626,154,1,8,Brake system inspection,True,False,Pending
+627,154,2,1,Engine oil replacement,True,False,Completed
+628,154,3,10,Brake system inspection,True,False,Completed
+629,154,4,5,Engine oil replacement,True,False,Completed
+630,154,5,6,Cooling system checked,True,False,Completed
+631,154,6,6,Tyre replacement required,True,False,Completed
+632,155,1,10,Electrical fault identified,True,False,Completed
+633,155,2,5,Tyre replacement required,True,True,Completed
+634,155,3,7,Routine preventive maintenance,True,False,Completed
+635,155,4,6,Normal wear detected,False,False,Completed
+636,155,5,7,Engine oil replacement,True,False,Completed
+637,155,6,3,Electrical fault identified,False,False,Completed
+638,156,1,2,Engine oil replacement,True,False,Completed
+639,156,2,12,Brake system inspection,True,False,Completed
+640,156,3,5,Routine preventive maintenance,True,False,Completed
+641,156,4,11,Brake system inspection,True,False,Completed
+642,157,1,11,Electrical fault identified,True,False,Pending
+643,157,2,5,Normal wear detected,True,False,In Progress
+644,158,1,8,Brake system inspection,True,False,Pending
+645,158,2,11,Cooling system checked,True,True,In Progress
+646,159,1,12,Tyre replacement required,True,False,Completed
+647,159,2,6,Cooling system checked,True,False,Completed
+648,160,1,10,Cooling system checked,True,True,Pending
+649,160,2,5,Normal wear detected,True,False,Completed
+650,160,3,9,Normal wear detected,True,False,Completed
+651,160,4,10,Electrical fault identified,True,False,Completed
+652,160,5,7,Engine oil replacement,False,False,In Progress
+653,161,1,10,Normal wear detected,True,False,Completed
+654,161,2,6,Brake system inspection,True,False,Completed
+655,161,3,12,Routine preventive maintenance,True,False,Completed
+656,162,1,6,Cooling system checked,True,False,Completed
+657,162,2,7,Electrical fault identified,True,False,Completed
+658,162,3,7,Engine oil replacement,True,False,Completed
+659,162,4,10,Electrical fault identified,True,False,Pending
+660,162,5,4,Brake system inspection,True,False,Pending
+661,163,1,10,Electrical fault identified,True,False,Completed
+662,163,2,12,Brake system inspection,True,True,Completed
+663,163,3,3,Engine oil replacement,True,False,Completed
+664,163,4,12,Cooling system checked,True,False,Completed
+665,164,1,12,Cooling system checked,False,False,Completed
+666,164,2,3,Tyre replacement required,True,False,Completed
+667,164,3,4,Engine oil replacement,True,False,In Progress
+668,164,4,6,Tyre replacement required,False,False,Completed
+669,164,5,5,Cooling system checked,True,False,Pending
+670,165,1,5,Routine preventive maintenance,True,False,Pending
+671,165,2,6,Normal wear detected,True,False,Completed
+672,165,3,4,Engine oil replacement,True,False,Completed
+673,165,4,1,Electrical fault identified,False,False,Completed
+674,165,5,7,Engine oil replacement,True,False,Completed
+675,166,1,12,Normal wear detected,True,False,Completed
+676,166,2,8,Electrical fault identified,True,False,In Progress
+677,166,3,6,Brake system inspection,True,False,Pending
+678,166,4,1,Brake system inspection,True,True,In Progress
+679,166,5,12,Engine oil replacement,True,False,In Progress
+680,166,6,12,Electrical fault identified,True,False,Completed
+681,167,1,8,Routine preventive maintenance,True,False,Completed
+682,167,2,7,Cooling system checked,False,False,Completed
+683,167,3,7,Engine oil replacement,True,False,Completed
+684,167,4,12,Electrical fault identified,False,False,Completed
+685,167,5,3,Tyre replacement required,True,False,Completed
+686,167,6,1,Cooling system checked,True,False,In Progress
+687,168,1,1,Engine oil replacement,True,False,In Progress
+688,168,2,12,Normal wear detected,True,False,Completed
+689,168,3,7,Electrical fault identified,True,False,Completed
+690,169,1,9,Electrical fault identified,False,False,Completed
+691,169,2,11,Engine oil replacement,True,False,Pending
+692,170,1,3,Brake system inspection,True,False,Completed
+693,170,2,3,Normal wear detected,True,False,In Progress
+694,170,3,2,Cooling system checked,True,False,Completed
+695,170,4,12,Normal wear detected,False,False,Completed
+696,170,5,9,Brake system inspection,True,False,Completed
+697,170,6,2,Electrical fault identified,True,True,Pending
+698,171,1,1,Brake system inspection,True,False,Completed
+699,171,2,9,Normal wear detected,True,False,Completed
+700,171,3,7,Electrical fault identified,True,False,Completed
+701,171,4,5,Brake system inspection,True,False,Pending
+702,171,5,5,Normal wear detected,True,False,Pending
+703,172,1,3,Routine preventive maintenance,True,False,Completed
+704,172,2,10,Brake system inspection,True,False,Completed
+705,172,3,5,Normal wear detected,False,False,In Progress
+706,172,4,11,Routine preventive maintenance,False,False,Completed
+707,173,1,9,Electrical fault identified,False,False,Completed
+708,173,2,7,Engine oil replacement,True,False,Completed
+709,173,3,1,Cooling system checked,True,False,Completed
+710,173,4,7,Tyre replacement required,True,False,Completed
+711,173,5,5,Normal wear detected,True,False,In Progress
+712,174,1,9,Normal wear detected,False,False,Completed
+713,174,2,5,Normal wear detected,True,False,Completed
+714,175,1,2,Cooling system checked,True,False,Pending
+715,175,2,2,Routine preventive maintenance,True,False,In Progress
+716,175,3,8,Brake system inspection,True,False,Completed
+717,176,1,7,Tyre replacement required,True,False,Completed
+718,176,2,3,Brake system inspection,True,False,Completed
+719,176,3,9,Tyre replacement required,True,False,Pending
+720,176,4,8,Engine oil replacement,True,False,Completed
+721,176,5,12,Electrical fault identified,False,False,Completed
+722,176,6,2,Normal wear detected,True,True,Pending
+723,177,1,4,Electrical fault identified,True,False,Completed
+724,177,2,2,Cooling system checked,True,False,Completed
+725,177,3,3,Routine preventive maintenance,True,False,Completed
+726,177,4,10,Engine oil replacement,True,False,In Progress
+727,178,1,2,Cooling system checked,False,False,Completed
+728,178,2,10,Brake system inspection,True,False,Completed
+729,178,3,1,Tyre replacement required,True,False,Completed
+730,179,1,9,Cooling system checked,True,False,Completed
+731,179,2,4,Normal wear detected,False,False,Completed
+732,179,3,2,Routine preventive maintenance,True,False,Pending
+733,179,4,10,Brake system inspection,True,False,Completed
+734,179,5,12,Engine oil replacement,True,False,Completed
+735,179,6,3,Normal wear detected,True,False,Completed
+736,180,1,1,Electrical fault identified,True,False,Completed
+737,180,2,3,Routine preventive maintenance,True,False,In Progress
+738,180,3,8,Brake system inspection,True,False,In Progress
+739,181,1,4,Cooling system checked,True,False,Completed
+740,181,2,5,Cooling system checked,True,False,Completed
+741,181,3,6,Normal wear detected,True,False,In Progress
+742,181,4,12,Normal wear detected,True,False,Completed
+743,182,1,10,Normal wear detected,True,False,Pending
+744,182,2,4,Normal wear detected,True,False,In Progress
+745,182,3,6,Tyre replacement required,True,False,Completed
+746,182,4,9,Tyre replacement required,True,False,Completed
+747,182,5,2,Cooling system checked,True,False,Completed
+748,183,1,12,Routine preventive maintenance,True,False,Completed
+749,183,2,2,Cooling system checked,False,False,Completed
+750,183,3,6,Routine preventive maintenance,True,False,Pending
+751,183,4,5,Normal wear detected,True,False,In Progress
+752,183,5,8,Cooling system checked,True,False,Completed
+753,183,6,8,Normal wear detected,True,False,Completed
+754,184,1,4,Brake system inspection,True,False,Completed
+755,184,2,10,Brake system inspection,True,False,Completed
+756,184,3,5,Normal wear detected,True,False,Completed
+757,184,4,10,Engine oil replacement,True,False,In Progress
+758,184,5,10,Engine oil replacement,True,False,Completed
+759,185,1,6,Tyre replacement required,True,False,Completed
+760,185,2,1,Routine preventive maintenance,True,False,Completed
+761,185,3,5,Brake system inspection,True,False,Completed
+762,185,4,5,Normal wear detected,True,False,In Progress
+763,186,1,2,Tyre replacement required,True,False,Completed
+764,186,2,3,Cooling system checked,True,False,In Progress
+765,187,1,3,Electrical fault identified,True,False,Pending
+766,187,2,2,Electrical fault identified,True,False,Completed
+767,187,3,9,Electrical fault identified,True,True,Completed
+768,187,4,11,Routine preventive maintenance,False,False,Completed
+769,188,1,11,Routine preventive maintenance,False,False,Completed
+770,188,2,7,Brake system inspection,True,False,Completed
+771,188,3,10,Tyre replacement required,False,False,Completed
+772,188,4,6,Normal wear detected,False,True,Completed
+773,188,5,12,Normal wear detected,False,False,Completed
+774,189,1,8,Normal wear detected,True,True,Pending
+775,189,2,10,Cooling system checked,False,False,Completed
+776,190,1,1,Cooling system checked,True,False,Completed
+777,190,2,7,Electrical fault identified,True,False,Completed
+778,190,3,2,Normal wear detected,True,True,Pending
+779,190,4,9,Routine preventive maintenance,True,False,Completed
+780,191,1,5,Tyre replacement required,True,False,Completed
+781,191,2,1,Engine oil replacement,False,True,Completed
+782,191,3,12,Brake system inspection,False,False,Completed
+783,192,1,6,Engine oil replacement,True,False,Completed
+784,192,2,12,Normal wear detected,True,False,Completed
+785,193,1,7,Engine oil replacement,True,False,Completed
+786,193,2,8,Engine oil replacement,True,True,Completed
+787,193,3,8,Tyre replacement required,False,False,Completed
+788,194,1,3,Engine oil replacement,False,False,Completed
+789,194,2,8,Brake system inspection,True,False,In Progress
+790,195,1,6,Engine oil replacement,True,True,Completed
+791,195,2,6,Electrical fault identified,True,False,Completed
+792,195,3,1,Tyre replacement required,True,False,Completed
+793,195,4,8,Routine preventive maintenance,True,False,In Progress
+794,195,5,10,Electrical fault identified,False,False,Completed
+795,196,1,11,Normal wear detected,True,False,Completed
+796,196,2,10,Electrical fault identified,True,False,Pending
+797,196,3,4,Cooling system checked,True,False,Pending
+798,196,4,3,Tyre replacement required,False,False,Completed
+799,196,5,7,Tyre replacement required,True,False,Completed
+800,197,1,3,Tyre replacement required,False,False,Completed
+801,197,2,1,Routine preventive maintenance,True,False,Completed
+802,198,1,8,Electrical fault identified,True,False,Completed
+803,198,2,2,Cooling system checked,True,False,Completed
+804,198,3,4,Cooling system checked,True,False,Completed
+805,198,4,1,Routine preventive maintenance,False,False,Pending
+806,199,1,3,Engine oil replacement,True,False,Completed
+807,199,2,3,Brake system inspection,True,False,Completed
+808,199,3,1,Routine preventive maintenance,False,False,In Progress
+809,199,4,7,Routine preventive maintenance,True,True,Completed
+810,199,5,2,Brake system inspection,True,False,Completed
+811,200,1,1,Cooling system checked,True,False,Completed
+812,200,2,9,Engine oil replacement,True,False,Completed
+813,200,3,5,Routine preventive maintenance,True,True,Completed
+814,200,4,6,Brake system inspection,True,False,Pending
+815,201,1,4,Electrical fault identified,True,False,Completed
+816,201,2,1,Routine preventive maintenance,True,False,Pending
+817,201,3,6,Brake system inspection,False,False,Completed
+818,201,4,9,Electrical fault identified,True,False,Completed
+819,202,1,1,Cooling system checked,True,False,Completed
+820,202,2,12,Electrical fault identified,True,False,Pending
+821,202,3,9,Electrical fault identified,True,False,Completed
+822,202,4,2,Tyre replacement required,True,False,Completed
+823,202,5,10,Brake system inspection,True,False,In Progress
+824,203,1,4,Brake system inspection,True,False,Pending
+825,203,2,2,Routine preventive maintenance,True,False,Completed
+826,203,3,1,Tyre replacement required,True,False,Completed
+827,203,4,10,Cooling system checked,True,False,Completed
+828,204,1,7,Engine oil replacement,True,False,Completed
+829,204,2,10,Cooling system checked,True,False,Completed
+830,204,3,3,Routine preventive maintenance,False,False,Completed
+831,205,1,5,Normal wear detected,True,False,Completed
+832,205,2,1,Tyre replacement required,True,False,In Progress
+833,205,3,6,Normal wear detected,True,False,Completed
+834,205,4,9,Cooling system checked,True,False,In Progress
+835,206,1,3,Engine oil replacement,False,False,Completed
+836,206,2,6,Normal wear detected,True,False,Completed
+837,207,1,6,Cooling system checked,True,False,In Progress
+838,207,2,11,Electrical fault identified,True,False,Completed
+839,208,1,4,Cooling system checked,False,False,Completed
+840,208,2,1,Electrical fault identified,False,False,Pending
+841,209,1,10,Brake system inspection,True,False,Completed
+842,209,2,5,Normal wear detected,True,False,In Progress
+843,210,1,6,Routine preventive maintenance,False,True,In Progress
+844,210,2,7,Normal wear detected,False,False,Completed
+845,211,1,9,Engine oil replacement,True,False,Completed
+846,211,2,5,Engine oil replacement,True,False,Completed
+847,212,1,9,Engine oil replacement,True,True,Completed
+848,212,2,2,Routine preventive maintenance,True,False,In Progress
+849,212,3,4,Cooling system checked,True,True,In Progress
+850,213,1,12,Brake system inspection,True,False,Completed
+851,213,2,11,Engine oil replacement,True,False,In Progress
+852,213,3,7,Brake system inspection,True,False,In Progress
+853,214,1,5,Normal wear detected,False,True,Completed
+854,214,2,9,Cooling system checked,True,True,Completed
+855,215,1,12,Electrical fault identified,True,False,Completed
+856,215,2,3,Cooling system checked,True,False,Completed
+857,215,3,10,Brake system inspection,True,False,In Progress
+858,215,4,10,Engine oil replacement,False,False,Completed
+859,215,5,10,Engine oil replacement,True,True,Completed
+860,216,1,1,Engine oil replacement,False,False,Completed
+861,216,2,9,Brake system inspection,False,False,Pending
+862,216,3,1,Electrical fault identified,True,False,Completed
+863,217,1,5,Electrical fault identified,True,False,Completed
+864,217,2,5,Cooling system checked,True,False,In Progress
+865,217,3,2,Cooling system checked,True,True,Completed
+866,218,1,7,Normal wear detected,False,False,Completed
+867,218,2,9,Routine preventive maintenance,True,False,Completed
+868,218,3,7,Engine oil replacement,True,False,Completed
+869,218,4,10,Electrical fault identified,True,False,Completed
+870,218,5,2,Engine oil replacement,True,False,Completed
+871,218,6,1,Routine preventive maintenance,True,False,Completed
+872,219,1,1,Tyre replacement required,True,False,Completed
+873,219,2,6,Engine oil replacement,True,False,Completed
+874,219,3,2,Cooling system checked,True,False,Pending
+875,220,1,4,Brake system inspection,True,False,Completed
+876,220,2,8,Brake system inspection,True,False,Completed
+877,220,3,8,Normal wear detected,False,False,Completed
+878,220,4,7,Routine preventive maintenance,True,False,Completed
+879,220,5,5,Tyre replacement required,True,False,Pending
+880,220,6,4,Cooling system checked,True,False,Completed
+881,221,1,6,Cooling system checked,True,False,Pending
+882,221,2,4,Cooling system checked,True,False,Completed
+883,221,3,6,Brake system inspection,True,False,In Progress
+884,221,4,6,Normal wear detected,True,False,In Progress
+885,221,5,7,Engine oil replacement,True,False,Completed
+886,221,6,6,Electrical fault identified,False,False,Completed
+887,222,1,3,Tyre replacement required,False,True,In Progress
+888,222,2,3,Tyre replacement required,True,False,In Progress
+889,222,3,2,Cooling system checked,True,True,Completed
+890,222,4,3,Electrical fault identified,True,False,Completed
+891,223,1,10,Electrical fault identified,True,False,Completed
+892,223,2,3,Brake system inspection,False,True,In Progress
+893,224,1,6,Electrical fault identified,True,False,Completed
+894,224,2,7,Tyre replacement required,True,False,Completed
+895,224,3,6,Tyre replacement required,True,False,In Progress
+896,225,1,2,Brake system inspection,False,False,In Progress
+897,225,2,2,Routine preventive maintenance,True,False,Completed
+898,225,3,9,Tyre replacement required,True,False,Pending
+899,226,1,5,Engine oil replacement,True,False,Pending
+900,226,2,2,Electrical fault identified,True,False,Completed
+901,226,3,4,Cooling system checked,True,True,In Progress
+902,226,4,6,Engine oil replacement,True,False,In Progress
+903,227,1,6,Engine oil replacement,True,False,Completed
+904,227,2,9,Tyre replacement required,True,False,In Progress
+905,227,3,6,Routine preventive maintenance,True,False,In Progress
+906,227,4,11,Brake system inspection,True,False,Completed
+907,228,1,10,Engine oil replacement,True,False,Completed
+908,228,2,11,Engine oil replacement,True,True,Completed
+909,228,3,4,Tyre replacement required,True,False,Completed
+910,229,1,8,Cooling system checked,True,False,Pending
+911,229,2,9,Engine oil replacement,True,True,Completed
+912,229,3,12,Brake system inspection,True,False,Pending
+913,229,4,10,Cooling system checked,False,False,In Progress
+914,230,1,7,Cooling system checked,False,False,Completed
+915,230,2,3,Electrical fault identified,False,False,Completed
+916,230,3,10,Electrical fault identified,False,False,In Progress
+917,230,4,4,Electrical fault identified,False,False,Completed
+918,230,5,1,Normal wear detected,True,False,Pending
+919,231,1,2,Routine preventive maintenance,False,False,Completed
+920,231,2,5,Normal wear detected,True,False,Completed
+921,232,1,4,Electrical fault identified,True,False,Completed
+922,232,2,4,Electrical fault identified,False,False,Completed
+923,232,3,2,Normal wear detected,True,False,In Progress
+924,232,4,1,Brake system inspection,True,False,In Progress
+925,232,5,5,Electrical fault identified,True,True,In Progress
+926,232,6,12,Routine preventive maintenance,True,False,Completed
+927,233,1,4,Normal wear detected,True,True,Pending
+928,233,2,8,Tyre replacement required,False,False,Completed
+929,233,3,12,Routine preventive maintenance,True,False,Completed
+930,233,4,12,Routine preventive maintenance,True,False,Completed
+931,233,5,5,Engine oil replacement,True,False,Completed
+932,233,6,10,Engine oil replacement,False,False,Completed
+933,234,1,12,Brake system inspection,False,False,Completed
+934,234,2,3,Routine preventive maintenance,True,False,Pending
+935,234,3,9,Brake system inspection,True,False,Completed
+936,235,1,12,Normal wear detected,False,False,Pending
+937,235,2,5,Cooling system checked,True,False,Completed
+938,235,3,7,Routine preventive maintenance,True,False,In Progress
+939,235,4,8,Tyre replacement required,True,False,Completed
+940,236,1,6,Routine preventive maintenance,True,False,Completed
+941,236,2,11,Cooling system checked,False,True,Completed
+942,237,1,2,Tyre replacement required,True,False,Completed
+943,237,2,6,Normal wear detected,True,False,Completed
+944,237,3,2,Electrical fault identified,False,False,In Progress
+945,237,4,11,Electrical fault identified,True,False,Pending
+946,237,5,3,Engine oil replacement,True,False,Completed
+947,237,6,11,Routine preventive maintenance,True,False,Completed
+948,238,1,6,Engine oil replacement,True,False,Completed
+949,238,2,2,Tyre replacement required,True,False,Completed
+950,238,3,6,Cooling system checked,True,False,Completed
+951,238,4,9,Normal wear detected,True,False,Completed
+952,238,5,11,Routine preventive maintenance,True,False,Completed
+953,238,6,12,Tyre replacement required,True,False,Completed
+954,239,1,4,Routine preventive maintenance,False,False,Pending
+955,239,2,11,Electrical fault identified,True,False,Completed
+956,239,3,9,Normal wear detected,True,False,Completed
+957,239,4,3,Normal wear detected,True,False,Completed
+958,239,5,5,Brake system inspection,True,False,Completed
+959,239,6,11,Engine oil replacement,True,False,Completed
+960,240,1,11,Brake system inspection,True,False,Completed
+961,240,2,2,Normal wear detected,True,False,Completed
+962,240,3,12,Electrical fault identified,True,False,In Progress
+963,241,1,4,Tyre replacement required,True,False,Completed
+964,241,2,4,Normal wear detected,True,True,In Progress
+965,242,1,8,Normal wear detected,False,False,Completed
+966,242,2,1,Electrical fault identified,False,False,Completed
+967,243,1,5,Electrical fault identified,True,False,In Progress
+968,243,2,2,Electrical fault identified,True,False,In Progress
+969,244,1,6,Cooling system checked,True,False,In Progress
+970,244,2,9,Brake system inspection,True,False,Pending
+971,244,3,8,Routine preventive maintenance,True,False,Completed
+972,244,4,2,Normal wear detected,False,False,Pending
+973,244,5,2,Cooling system checked,True,False,In Progress
+974,245,1,3,Brake system inspection,True,False,In Progress
+975,245,2,11,Electrical fault identified,False,False,Completed
+976,245,3,10,Electrical fault identified,True,False,Completed
+977,245,4,12,Cooling system checked,True,False,Completed
+978,246,1,5,Cooling system checked,True,False,Completed
+979,246,2,5,Cooling system checked,True,False,Pending
+980,247,1,2,Engine oil replacement,True,False,Completed
+981,247,2,5,Electrical fault identified,True,False,In Progress
+982,247,3,11,Engine oil replacement,True,True,Completed
+983,248,1,1,Normal wear detected,True,False,Completed
+984,248,2,8,Normal wear detected,True,False,In Progress
+985,249,1,12,Normal wear detected,True,False,Completed
+986,249,2,1,Cooling system checked,True,False,Completed
+987,249,3,5,Routine preventive maintenance,True,False,Completed
+988,250,1,12,Engine oil replacement,True,False,Pending
+989,250,2,12,Cooling system checked,True,False,Pending
+990,251,1,11,Normal wear detected,True,False,Completed
+991,251,2,9,Engine oil replacement,True,False,Completed
+992,251,3,12,Electrical fault identified,True,False,Completed
+993,251,4,11,Engine oil replacement,True,False,Completed
+994,251,5,2,Engine oil replacement,True,False,In Progress
+995,252,1,7,Normal wear detected,True,False,Completed
+996,252,2,12,Cooling system checked,True,False,Completed
+997,252,3,12,Brake system inspection,True,False,Completed
+998,253,1,2,Routine preventive maintenance,False,False,Completed
+999,253,2,3,Normal wear detected,True,False,Completed
+1000,253,3,10,Tyre replacement required,True,False,Completed
+1001,254,1,1,Brake system inspection,True,False,Pending
+1002,254,2,10,Routine preventive maintenance,True,False,Completed
+1003,254,3,5,Normal wear detected,True,False,In Progress
+1004,255,1,8,Engine oil replacement,True,False,Pending
+1005,255,2,9,Tyre replacement required,True,False,Completed
+1006,255,3,5,Brake system inspection,True,False,Pending
+1007,256,1,8,Routine preventive maintenance,True,True,Completed
+1008,256,2,10,Routine preventive maintenance,True,False,Completed
+1009,256,3,10,Cooling system checked,True,False,Pending
+1010,256,4,7,Engine oil replacement,False,False,Completed
+1011,257,1,7,Electrical fault identified,True,False,Completed
+1012,257,2,7,Brake system inspection,True,False,Completed
+1013,257,3,4,Engine oil replacement,True,False,Completed
+1014,257,4,8,Routine preventive maintenance,True,False,Pending
+1015,258,1,3,Routine preventive maintenance,False,True,Completed
+1016,258,2,7,Routine preventive maintenance,True,False,Completed
+1017,258,3,12,Electrical fault identified,False,False,Completed
+1018,258,4,6,Engine oil replacement,True,False,In Progress
+1019,258,5,11,Tyre replacement required,False,False,Pending
+1020,258,6,9,Engine oil replacement,True,False,Completed
+1021,259,1,6,Routine preventive maintenance,True,False,Completed
+1022,259,2,8,Normal wear detected,True,False,Completed
+1023,259,3,7,Cooling system checked,True,False,In Progress
+1024,260,1,6,Brake system inspection,True,False,Pending
+1025,260,2,9,Routine preventive maintenance,True,False,Completed
+1026,260,3,3,Cooling system checked,False,False,Completed
+1027,260,4,6,Normal wear detected,False,False,Completed
+1028,261,1,6,Cooling system checked,True,False,In Progress
+1029,261,2,12,Tyre replacement required,True,False,Completed
+1030,261,3,9,Routine preventive maintenance,True,False,Pending
+1031,261,4,12,Normal wear detected,True,False,In Progress
+1032,261,5,11,Routine preventive maintenance,False,False,Completed
+1033,262,1,3,Normal wear detected,True,False,Completed
+1034,262,2,9,Brake system inspection,False,False,Completed
+1035,262,3,1,Routine preventive maintenance,False,False,Completed
+1036,262,4,6,Normal wear detected,True,False,In Progress
+1037,262,5,1,Brake system inspection,False,False,Completed
+1038,263,1,5,Tyre replacement required,False,False,Completed
+1039,263,2,6,Brake system inspection,True,False,Pending
+1040,264,1,7,Normal wear detected,True,False,Completed
+1041,264,2,9,Normal wear detected,True,False,Completed
+1042,265,1,2,Tyre replacement required,True,False,Pending
+1043,265,2,1,Routine preventive maintenance,False,False,In Progress
+1044,265,3,12,Normal wear detected,True,False,In Progress
+1045,265,4,4,Electrical fault identified,True,False,In Progress
+1046,265,5,1,Routine preventive maintenance,False,False,Completed
+1047,266,1,9,Tyre replacement required,True,False,Completed
+1048,266,2,6,Routine preventive maintenance,True,False,Completed
+1049,266,3,12,Normal wear detected,True,False,Completed
+1050,267,1,3,Cooling system checked,True,False,Completed
+1051,267,2,11,Normal wear detected,True,False,Completed
+1052,267,3,2,Tyre replacement required,True,False,In Progress
+1053,267,4,2,Cooling system checked,True,False,Completed
+1054,267,5,5,Normal wear detected,True,True,In Progress
+1055,267,6,3,Normal wear detected,False,False,Completed
+1056,268,1,8,Engine oil replacement,True,False,Completed
+1057,268,2,7,Normal wear detected,False,False,Completed
+1058,268,3,7,Normal wear detected,True,False,In Progress
+1059,268,4,4,Tyre replacement required,True,True,Completed
+1060,269,1,3,Electrical fault identified,True,False,In Progress
+1061,269,2,9,Tyre replacement required,True,False,Completed
+1062,269,3,11,Cooling system checked,True,False,Completed
+1063,269,4,11,Cooling system checked,True,False,Completed
+1064,269,5,12,Normal wear detected,True,False,Pending
+1065,270,1,10,Engine oil replacement,False,False,Completed
+1066,270,2,11,Engine oil replacement,True,False,Completed
+1067,270,3,4,Cooling system checked,True,False,Completed
+1068,271,1,6,Brake system inspection,False,True,Pending
+1069,271,2,8,Engine oil replacement,False,False,Completed
+1070,271,3,6,Cooling system checked,True,False,In Progress
+1071,272,1,3,Tyre replacement required,True,False,Completed
+1072,272,2,4,Tyre replacement required,True,True,Completed
+1073,272,3,2,Electrical fault identified,True,False,Completed
+1074,273,1,6,Normal wear detected,True,False,Completed
+1075,273,2,6,Cooling system checked,True,True,Completed
+1076,274,1,3,Tyre replacement required,True,False,Completed
+1077,274,2,5,Cooling system checked,True,False,Pending
+1078,274,3,11,Tyre replacement required,True,False,Completed
+1079,274,4,12,Cooling system checked,False,False,Completed
+1080,274,5,3,Brake system inspection,True,True,Completed
+1081,274,6,11,Normal wear detected,True,False,In Progress
+1082,275,1,6,Normal wear detected,False,False,Completed
+1083,275,2,1,Engine oil replacement,True,False,Completed
+1084,276,1,11,Routine preventive maintenance,True,False,Pending
+1085,276,2,4,Electrical fault identified,False,False,Completed
+1086,276,3,11,Tyre replacement required,True,False,Completed
+1087,276,4,3,Electrical fault identified,True,False,In Progress
+1088,276,5,8,Electrical fault identified,True,False,In Progress
+1089,276,6,2,Engine oil replacement,True,False,Completed
+1090,277,1,2,Cooling system checked,True,False,Completed
+1091,277,2,5,Tyre replacement required,True,False,Completed
+1092,278,1,8,Engine oil replacement,True,False,Completed
+1093,278,2,6,Brake system inspection,True,False,Completed
+1094,278,3,11,Routine preventive maintenance,True,False,Completed
+1095,278,4,2,Engine oil replacement,True,False,In Progress
+1096,279,1,7,Normal wear detected,True,False,In Progress
+1097,279,2,8,Routine preventive maintenance,True,False,Pending
+1098,280,1,7,Brake system inspection,True,False,In Progress
+1099,280,2,5,Engine oil replacement,True,False,In Progress
+1100,280,3,6,Routine preventive maintenance,False,False,Completed
+1101,281,1,10,Engine oil replacement,True,False,Completed
+1102,281,2,1,Routine preventive maintenance,True,False,In Progress
+1103,281,3,6,Tyre replacement required,True,False,Completed
+1104,281,4,10,Brake system inspection,True,False,In Progress
+1105,281,5,7,Cooling system checked,True,False,In Progress
+1106,281,6,8,Routine preventive maintenance,True,False,Completed
+1107,282,1,6,Cooling system checked,True,False,Completed
+1108,282,2,7,Routine preventive maintenance,True,False,Completed
+1109,282,3,12,Engine oil replacement,True,False,Completed
+1110,283,1,10,Engine oil replacement,True,False,Completed
+1111,283,2,6,Cooling system checked,True,False,Completed
+1112,283,3,2,Routine preventive maintenance,True,False,Completed
+1113,284,1,9,Electrical fault identified,False,False,Pending
+1114,284,2,5,Routine preventive maintenance,True,False,In Progress
+1115,285,1,2,Cooling system checked,True,False,In Progress
+1116,285,2,7,Brake system inspection,True,False,Pending
+1117,285,3,11,Tyre replacement required,True,False,In Progress
+1118,285,4,8,Brake system inspection,True,False,Completed
+1119,285,5,6,Electrical fault identified,False,False,Completed
+1120,285,6,1,Engine oil replacement,True,False,Completed
+1121,286,1,7,Tyre replacement required,False,False,Completed
+1122,286,2,11,Cooling system checked,True,False,Completed
+1123,286,3,3,Engine oil replacement,True,False,Completed
+1124,286,4,10,Cooling system checked,True,False,In Progress
+1125,286,5,2,Cooling system checked,False,False,Completed
+1126,286,6,12,Brake system inspection,True,False,In Progress
+1127,287,1,10,Routine preventive maintenance,True,False,Completed
+1128,287,2,1,Engine oil replacement,False,False,Completed
+1129,287,3,4,Engine oil replacement,True,False,In Progress
+1130,288,1,12,Cooling system checked,True,False,Pending
+1131,288,2,5,Engine oil replacement,True,False,Completed
+1132,288,3,6,Engine oil replacement,True,False,Pending
+1133,288,4,2,Brake system inspection,True,False,Completed
+1134,288,5,11,Tyre replacement required,True,False,Completed
+1135,288,6,11,Electrical fault identified,True,True,Completed
+1136,289,1,4,Electrical fault identified,True,False,Completed
+1137,289,2,5,Tyre replacement required,True,False,Completed
+1138,289,3,4,Tyre replacement required,False,False,Pending
+1139,289,4,7,Tyre replacement required,False,False,Pending
+1140,290,1,2,Cooling system checked,True,False,Completed
+1141,290,2,4,Routine preventive maintenance,True,False,Completed
+1142,290,3,1,Electrical fault identified,True,False,Completed
+1143,290,4,11,Cooling system checked,True,False,Pending
+1144,290,5,4,Normal wear detected,True,False,Completed
+1145,291,1,4,Cooling system checked,True,False,In Progress
+1146,291,2,8,Tyre replacement required,True,False,Completed
+1147,291,3,3,Engine oil replacement,True,False,Pending
+1148,291,4,8,Brake system inspection,True,False,Pending
+1149,291,5,4,Brake system inspection,True,False,Completed
+1150,292,1,12,Tyre replacement required,True,False,In Progress
+1151,292,2,12,Normal wear detected,True,False,Completed
+1152,292,3,12,Engine oil replacement,True,False,Pending
+1153,292,4,10,Electrical fault identified,True,False,Completed
+1154,292,5,10,Engine oil replacement,False,False,Completed
+1155,293,1,1,Brake system inspection,True,False,Completed
+1156,293,2,7,Brake system inspection,True,False,Completed
+1157,293,3,1,Tyre replacement required,True,False,Completed
+1158,293,4,10,Electrical fault identified,False,False,Completed
+1159,293,5,3,Normal wear detected,True,False,Completed
+1160,294,1,6,Normal wear detected,True,False,In Progress
+1161,294,2,4,Cooling system checked,True,False,Completed
+1162,294,3,1,Electrical fault identified,True,False,In Progress
+1163,294,4,6,Electrical fault identified,True,False,Completed
+1164,295,1,9,Tyre replacement required,True,False,Completed
+1165,295,2,12,Electrical fault identified,True,True,Completed
+1166,295,3,8,Tyre replacement required,True,False,Completed
+1167,295,4,1,Brake system inspection,True,False,In Progress
+1168,295,5,11,Brake system inspection,True,False,In Progress
+1169,295,6,1,Cooling system checked,True,False,Completed
+1170,296,1,8,Cooling system checked,False,False,In Progress
+1171,296,2,5,Cooling system checked,True,False,Completed
+1172,297,1,3,Tyre replacement required,True,True,Completed
+1173,297,2,1,Tyre replacement required,False,False,In Progress
+1174,297,3,1,Brake system inspection,True,False,Completed
+1175,297,4,8,Cooling system checked,True,False,Completed
+1176,298,1,10,Cooling system checked,True,False,Pending
+1177,298,2,3,Engine oil replacement,True,False,Completed
+1178,298,3,6,Routine preventive maintenance,True,False,Completed
+1179,298,4,1,Brake system inspection,False,False,Completed
+1180,298,5,10,Electrical fault identified,True,True,Pending
+1181,299,1,8,Cooling system checked,False,False,Completed
+1182,299,2,5,Routine preventive maintenance,True,False,Completed
+1183,299,3,5,Routine preventive maintenance,True,False,Completed
+1184,299,4,5,Engine oil replacement,True,False,Completed
+1185,300,1,8,Brake system inspection,True,False,In Progress
+1186,300,2,4,Tyre replacement required,True,True,Pending
+1187,300,3,3,Electrical fault identified,True,False,In Progress
+1188,301,1,2,Routine preventive maintenance,True,False,Pending
+1189,301,2,2,Electrical fault identified,True,False,In Progress
+1190,301,3,2,Routine preventive maintenance,True,False,Pending
+1191,301,4,9,Engine oil replacement,True,False,In Progress
+1192,301,5,4,Electrical fault identified,True,False,Completed
+1193,302,1,11,Cooling system checked,False,False,Pending
+1194,302,2,4,Engine oil replacement,True,False,Completed
+1195,302,3,11,Tyre replacement required,True,False,Completed
+1196,302,4,10,Routine preventive maintenance,True,False,Pending
+1197,302,5,3,Engine oil replacement,True,True,Completed
+1198,303,1,6,Normal wear detected,False,False,Completed
+1199,303,2,4,Routine preventive maintenance,True,False,In Progress
+1200,304,1,2,Normal wear detected,True,False,Completed
+1201,304,2,5,Brake system inspection,True,False,In Progress
+1202,304,3,3,Tyre replacement required,True,False,Pending
+1203,304,4,7,Routine preventive maintenance,True,False,Completed
+1204,304,5,5,Electrical fault identified,True,False,Completed
+1205,305,1,9,Tyre replacement required,True,False,Pending
+1206,305,2,6,Normal wear detected,True,True,Pending
+1207,305,3,7,Cooling system checked,False,False,Completed
+1208,305,4,9,Normal wear detected,False,False,Completed
+1209,305,5,9,Normal wear detected,False,False,In Progress
+1210,305,6,5,Brake system inspection,True,False,In Progress
+1211,306,1,11,Brake system inspection,True,False,Completed
+1212,306,2,2,Engine oil replacement,False,False,Pending
+1213,307,1,9,Tyre replacement required,True,False,Completed
+1214,307,2,8,Tyre replacement required,True,False,Completed
+1215,308,1,1,Tyre replacement required,True,False,In Progress
+1216,308,2,8,Engine oil replacement,True,True,In Progress
+1217,308,3,2,Electrical fault identified,False,False,Completed
+1218,308,4,10,Tyre replacement required,True,False,Completed
+1219,308,5,7,Brake system inspection,False,True,Completed
+1220,309,1,1,Electrical fault identified,True,False,Completed
+1221,309,2,5,Brake system inspection,True,False,Completed
+1222,309,3,2,Cooling system checked,False,False,Completed
+1223,310,1,9,Brake system inspection,False,False,Completed
+1224,310,2,11,Engine oil replacement,True,False,Completed
+1225,310,3,8,Normal wear detected,True,False,Completed
+1226,311,1,3,Electrical fault identified,True,False,Completed
+1227,311,2,1,Electrical fault identified,True,False,Completed
+1228,311,3,3,Engine oil replacement,True,False,Completed
+1229,312,1,7,Cooling system checked,True,False,Completed
+1230,312,2,8,Tyre replacement required,False,False,In Progress
+1231,312,3,1,Tyre replacement required,False,False,Completed
+1232,313,1,2,Electrical fault identified,True,False,In Progress
+1233,313,2,10,Engine oil replacement,True,False,Completed
+1234,313,3,12,Cooling system checked,False,True,Completed
+1235,313,4,7,Normal wear detected,False,False,Completed
+1236,313,5,2,Brake system inspection,True,False,Completed
+1237,314,1,4,Normal wear detected,True,False,Completed
+1238,314,2,3,Normal wear detected,True,False,Completed
+1239,315,1,9,Tyre replacement required,True,False,In Progress
+1240,315,2,8,Normal wear detected,True,False,Completed
+1241,315,3,6,Normal wear detected,True,False,Completed
+1242,316,1,4,Brake system inspection,True,False,Completed
+1243,316,2,6,Brake system inspection,True,False,Completed
+1244,317,1,7,Brake system inspection,True,False,In Progress
+1245,317,2,9,Brake system inspection,True,False,Completed
+1246,317,3,8,Routine preventive maintenance,True,False,Completed
+1247,318,1,6,Engine oil replacement,True,False,Completed
+1248,318,2,10,Electrical fault identified,False,False,Completed
+1249,319,1,8,Tyre replacement required,False,False,Completed
+1250,319,2,7,Tyre replacement required,True,False,Completed
+1251,319,3,11,Normal wear detected,True,False,Pending
+1252,320,1,4,Tyre replacement required,True,False,In Progress
+1253,320,2,8,Normal wear detected,True,False,Completed
+1254,320,3,7,Tyre replacement required,True,False,Completed
+1255,320,4,12,Normal wear detected,True,False,Completed
+1256,320,5,10,Engine oil replacement,True,False,Completed
+1257,320,6,10,Tyre replacement required,True,False,Completed
+1258,321,1,2,Tyre replacement required,True,False,Completed
+1259,321,2,12,Routine preventive maintenance,True,False,Completed
+1260,321,3,4,Electrical fault identified,True,False,Pending
+1261,321,4,1,Cooling system checked,True,False,Completed
+1262,321,5,7,Normal wear detected,True,False,Completed
+1263,321,6,9,Engine oil replacement,False,False,Pending
+1264,322,1,12,Cooling system checked,True,False,Completed
+1265,322,2,7,Brake system inspection,True,False,Completed
+1266,323,1,1,Tyre replacement required,True,False,Completed
+1267,323,2,1,Electrical fault identified,True,False,Completed
+1268,323,3,11,Normal wear detected,True,False,In Progress
+1269,323,4,2,Routine preventive maintenance,True,False,Completed
+1270,323,5,11,Electrical fault identified,True,False,Completed
+1271,324,1,11,Brake system inspection,True,False,Completed
+1272,324,2,5,Electrical fault identified,False,False,Completed
+1273,325,1,10,Cooling system checked,True,False,Completed
+1274,325,2,12,Cooling system checked,True,False,In Progress
+1275,325,3,3,Tyre replacement required,False,False,Completed
+1276,325,4,12,Normal wear detected,True,False,In Progress
+1277,326,1,10,Normal wear detected,False,False,Completed
+1278,326,2,9,Brake system inspection,True,False,Completed
+1279,326,3,12,Cooling system checked,True,False,In Progress
+1280,326,4,7,Cooling system checked,True,True,Completed
+1281,326,5,10,Tyre replacement required,False,True,Pending
+1282,326,6,7,Engine oil replacement,True,False,Completed
+1283,327,1,10,Routine preventive maintenance,True,False,Pending
+1284,327,2,3,Cooling system checked,True,False,In Progress
+1285,327,3,7,Tyre replacement required,True,False,Completed
+1286,327,4,7,Normal wear detected,True,False,Pending
+1287,327,5,9,Cooling system checked,True,False,Completed
+1288,328,1,9,Normal wear detected,True,False,Completed
+1289,328,2,5,Routine preventive maintenance,True,False,Completed
+1290,328,3,12,Tyre replacement required,True,False,Completed
+1291,328,4,3,Brake system inspection,True,False,Completed
+1292,328,5,11,Normal wear detected,True,False,Completed
+1293,328,6,5,Normal wear detected,False,False,Completed
+1294,329,1,2,Routine preventive maintenance,False,False,Completed
+1295,329,2,8,Normal wear detected,True,False,In Progress
+1296,330,1,2,Cooling system checked,True,False,Completed
+1297,330,2,11,Electrical fault identified,True,False,Completed
+1298,330,3,6,Engine oil replacement,True,False,Completed
+1299,331,1,6,Normal wear detected,True,False,Completed
+1300,331,2,4,Electrical fault identified,False,False,In Progress
+1301,331,3,5,Tyre replacement required,True,False,Completed
+1302,331,4,11,Cooling system checked,True,False,Pending
+1303,331,5,5,Electrical fault identified,True,False,Completed
+1304,331,6,7,Routine preventive maintenance,True,False,Completed
+1305,332,1,6,Cooling system checked,True,False,Completed
+1306,332,2,11,Cooling system checked,True,False,Completed
+1307,333,1,7,Electrical fault identified,True,False,Pending
+1308,333,2,7,Electrical fault identified,True,False,Completed
+1309,333,3,10,Cooling system checked,True,False,Completed
+1310,334,1,4,Routine preventive maintenance,False,False,Completed
+1311,334,2,2,Electrical fault identified,True,False,Pending
+1312,334,3,10,Normal wear detected,True,False,Completed
+1313,334,4,11,Brake system inspection,True,False,In Progress
+1314,334,5,11,Tyre replacement required,True,False,Pending
+1315,335,1,9,Brake system inspection,True,False,Completed
+1316,335,2,8,Normal wear detected,True,False,Completed
+1317,335,3,11,Routine preventive maintenance,True,False,Completed
+1318,335,4,1,Brake system inspection,True,False,Completed
+1319,335,5,8,Cooling system checked,True,False,Completed
+1320,336,1,3,Brake system inspection,True,False,In Progress
+1321,336,2,12,Engine oil replacement,True,False,Completed
+1322,336,3,3,Brake system inspection,True,False,Completed
+1323,337,1,12,Routine preventive maintenance,True,False,Completed
+1324,337,2,9,Normal wear detected,True,False,In Progress
+1325,337,3,7,Normal wear detected,True,False,In Progress
+1326,337,4,10,Cooling system checked,False,False,Completed
+1327,338,1,12,Routine preventive maintenance,True,False,Completed
+1328,338,2,2,Brake system inspection,True,False,Completed
+1329,338,3,1,Routine preventive maintenance,True,False,Pending
+1330,338,4,1,Tyre replacement required,True,False,Completed
+1331,339,1,10,Brake system inspection,True,False,Completed
+1332,339,2,4,Brake system inspection,True,True,In Progress
+1333,339,3,8,Routine preventive maintenance,True,False,Completed
+1334,339,4,11,Normal wear detected,True,True,Pending
+1335,339,5,1,Routine preventive maintenance,True,False,Completed
+1336,339,6,7,Normal wear detected,False,False,Completed

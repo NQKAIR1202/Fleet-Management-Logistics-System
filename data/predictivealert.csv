@@ -1,0 +1,177 @@
+AlertID,VIN,AlertType,AlertTimestamp,SeverityID,AlertStatus,ActionTaken,ResolvedDate
+1,TCHHUA7GE074LAW72,Brake Failure Risk,2026-06-24 10:19:12.881575,1,In Progress,Inspect brake system,
+2,SNLY6B13B7ZJNY06Z,Engine Failure Risk,2026-04-30 10:19:12.881575,2,Open,Schedule engine inspection,
+3,X00F5C4DR0L5K5Y1L,Driver Behaviour Risk,2026-07-21 10:19:12.881575,1,In Progress,Schedule coaching,
+4,YHYGTRLVH899A45UB,Brake Failure Risk,2026-05-22 10:19:12.881575,1,Open,Inspect brake system,
+5,X00F5C4DR0L5K5Y1L,Driver Behaviour Risk,2026-05-03 10:19:12.883389,1,Open,Schedule coaching,
+6,J2MS1DH16MMT7YWRP,Driver Behaviour Risk,2026-05-11 10:19:12.883389,3,In Progress,Schedule coaching,
+7,G4C8K6E18FRZ2ADLD,Tyre Wear Risk,2026-07-05 10:19:12.883389,3,Open,Replace tyres,
+8,JAHCP0UB69SKFEY18,Battery Health Risk,2026-06-28 10:19:12.883389,2,Open,Battery diagnostic,
+9,D9VRNG0Y9ER9UEA72,Tyre Wear Risk,2026-07-13 10:19:12.883389,2,In Progress,Replace tyres,
+10,XRKCF08W882N80J9W,Tyre Wear Risk,2026-07-20 10:19:12.883389,3,Resolved,Replace tyres,2026-07-17
+11,2P6GC4GUBSDBNCZCR,Battery Health Risk,2026-07-15 10:19:12.883389,3,In Progress,Battery diagnostic,
+12,L3XYDTLCMLX84Z1MA,Driver Behaviour Risk,2026-06-09 10:19:12.883389,2,Resolved,Schedule coaching,2026-07-06
+13,VLZP3RJBTHXBRH5U2,Driver Behaviour Risk,2026-07-20 10:19:12.883389,2,Open,Schedule coaching,
+14,K63TWXPZRYHYD6TGL,Engine Failure Risk,2026-06-26 10:19:12.883389,3,Open,Schedule engine inspection,
+15,WGDNEMANL8VHT0R8F,Brake Failure Risk,2026-05-05 10:19:12.883389,2,In Progress,Inspect brake system,
+16,7H6ZVJ7ZKUYF5AGE4,Tyre Wear Risk,2026-06-29 10:19:12.883389,2,In Progress,Replace tyres,
+17,TU77FFKG4X58SGNVY,Tyre Wear Risk,2026-07-16 10:19:12.883389,3,Resolved,Replace tyres,2026-07-05
+18,TLUDKXVFF225XF89Y,Driver Behaviour Risk,2026-06-24 10:19:12.883389,3,Resolved,Schedule coaching,2026-07-02
+19,N6W5ETCNAH89Z1EFV,Engine Failure Risk,2026-05-05 10:19:12.883389,3,In Progress,Schedule engine inspection,
+20,UWDA0W46ETMSXGEBE,Driver Behaviour Risk,2026-07-18 10:19:12.883389,2,In Progress,Schedule coaching,
+21,FKW0U8VEY3BC3EMPS,Engine Failure Risk,2026-06-04 10:19:12.883389,3,In Progress,Schedule engine inspection,
+22,LL43J0MUMEEK2P7FH,Tyre Wear Risk,2026-06-15 10:19:12.883389,1,Resolved,Replace tyres,2026-06-27
+23,PF85C5F2K1YDTR3LZ,Engine Failure Risk,2026-05-04 10:19:12.888366,3,In Progress,Schedule engine inspection,
+24,RD0R6LEEXW0NWKTR3,Battery Health Risk,2026-06-24 10:19:12.888366,2,Open,Battery diagnostic,
+25,8Z7TG15GGJXFD7ZYX,Driver Behaviour Risk,2026-06-01 10:19:12.888366,3,Resolved,Schedule coaching,2026-07-07
+26,4B0N9CC7HTVVP14UB,Driver Behaviour Risk,2026-07-08 10:19:12.888366,2,Open,Schedule coaching,
+27,GE9H1GN3E90YRDTBK,Driver Behaviour Risk,2026-07-11 10:19:12.889450,3,Open,Schedule coaching,
+28,RYCEPWD79C9MW9E40,Engine Failure Risk,2026-05-10 10:19:12.889450,3,Resolved,Schedule engine inspection,2026-07-12
+29,B9B30VFDNV5H5ZMSU,Brake Failure Risk,2026-05-19 10:19:12.889450,2,Resolved,Inspect brake system,2026-07-11
+30,2TL80Y4DE7NRXGPCP,Tyre Wear Risk,2026-04-29 10:19:12.889450,4,Open,Replace tyres,
+31,2KDHWLH87J0C58CV5,Brake Failure Risk,2026-06-21 10:19:12.890461,3,Resolved,Inspect brake system,2026-07-01
+32,V1RXWZ1SJ0WSPB7H7,Tyre Wear Risk,2026-07-05 10:19:12.890461,2,In Progress,Replace tyres,
+33,0TLEYDX6LRXLWVNLR,Battery Health Risk,2026-06-22 10:19:12.890461,1,Resolved,Battery diagnostic,2026-06-27
+34,983AMB3LRXPXCR779,Driver Behaviour Risk,2026-07-12 10:19:12.890461,3,Resolved,Schedule coaching,2026-06-26
+35,NWUFA6D9DS95UEWYL,Tyre Wear Risk,2026-06-30 10:19:12.891451,3,Resolved,Replace tyres,2026-07-06
+36,L1F3Z3V6PWJZ0YEVJ,Engine Failure Risk,2026-05-17 10:19:12.891451,2,Open,Schedule engine inspection,
+37,KUMSF6NY9PYXEX9W1,Driver Behaviour Risk,2026-05-24 10:19:12.891451,4,Resolved,Schedule coaching,2026-07-15
+38,77LV8DL6026PPR767,Brake Failure Risk,2026-06-16 10:19:12.891451,2,In Progress,Inspect brake system,
+39,XC7NH1REUFBM75S57,Engine Failure Risk,2026-07-15 10:19:12.892451,1,Resolved,Schedule engine inspection,2026-06-25
+40,2Y7PW6UGP4JK8YNLP,Brake Failure Risk,2026-05-18 10:19:12.892451,3,Open,Inspect brake system,
+41,HJHZU3N76BYD8XK1W,Engine Failure Risk,2026-05-16 10:19:12.892451,2,In Progress,Schedule engine inspection,
+42,A227NHDP9MGZH634F,Engine Failure Risk,2026-06-28 10:19:12.892451,2,Resolved,Schedule engine inspection,2026-07-12
+43,1G3K3P4AJEAY2CS7E,Driver Behaviour Risk,2026-06-16 10:19:12.893451,3,Resolved,Schedule coaching,2026-07-19
+44,Z65SJN3H03PMU0JKP,Battery Health Risk,2026-05-30 10:19:12.893451,4,Resolved,Battery diagnostic,2026-07-14
+45,SNW8C1U51KUUXJXYZ,Driver Behaviour Risk,2026-06-27 10:19:12.893451,3,Open,Schedule coaching,
+46,AR5JRH7876PB91TRP,Brake Failure Risk,2026-06-26 10:19:12.893451,2,Resolved,Inspect brake system,2026-07-08
+47,D6ERZ18P1FPDTP8BN,Driver Behaviour Risk,2026-04-26 10:19:12.894446,2,Open,Schedule coaching,
+48,EWET6EF7UP8Y5148H,Brake Failure Risk,2026-06-13 10:19:12.894446,2,Open,Inspect brake system,
+49,TX24XJV8GDRXWA07C,Brake Failure Risk,2026-05-01 10:19:12.894446,3,In Progress,Inspect brake system,
+50,K63TWXPZRYHYD6TGL,Battery Health Risk,2026-05-13 10:19:12.894446,2,Open,Battery diagnostic,
+51,KV2DLPV84G47SSBEF,Driver Behaviour Risk,2026-06-03 10:19:12.895452,3,In Progress,Schedule coaching,
+52,EU0CZ572WYN01NYV5,Engine Failure Risk,2026-06-10 10:19:12.895452,1,Resolved,Schedule engine inspection,2026-07-12
+53,7V2NUMJTTD9S47NPV,Battery Health Risk,2026-04-30 10:19:12.895452,3,Resolved,Battery diagnostic,2026-07-24
+54,ZDAWDDGS4RBEP944V,Brake Failure Risk,2026-07-12 10:19:12.895452,1,Resolved,Inspect brake system,2026-07-15
+55,V1RXWZ1SJ0WSPB7H7,Engine Failure Risk,2026-07-08 10:19:12.896449,2,Resolved,Schedule engine inspection,2026-07-11
+56,FC2NLB8JRT7XFTE2H,Battery Health Risk,2026-06-24 10:19:12.896886,2,In Progress,Battery diagnostic,
+57,JMMB5JEZUZ07RS4DD,Brake Failure Risk,2026-07-19 10:19:12.896886,3,Resolved,Inspect brake system,2026-07-22
+58,MF9RML9LN2R0XVH27,Driver Behaviour Risk,2026-06-25 10:19:12.896886,3,Open,Schedule coaching,
+59,VP13XRRBMSHZFTXUK,Engine Failure Risk,2026-06-28 10:19:12.896886,3,In Progress,Schedule engine inspection,
+60,EADA95GYYRX3GKSSA,Battery Health Risk,2026-06-07 10:19:12.896886,4,Open,Battery diagnostic,
+61,5C5D3G1Z5XRX233VU,Brake Failure Risk,2026-05-28 10:19:12.896886,4,In Progress,Inspect brake system,
+62,FR3BHAHHXH18L1GG9,Tyre Wear Risk,2026-05-15 10:19:12.896886,3,Resolved,Replace tyres,2026-06-30
+63,NF8UANA6V58GXFHM5,Battery Health Risk,2026-06-28 10:19:12.896886,2,In Progress,Battery diagnostic,
+64,LL43J0MUMEEK2P7FH,Brake Failure Risk,2026-06-15 10:19:12.896886,3,Resolved,Inspect brake system,2026-07-24
+65,LK8AGU7D20HXZ9GEC,Brake Failure Risk,2026-05-22 10:19:12.896886,1,In Progress,Inspect brake system,
+66,PZSBKK5CHJ3W3GDHE,Driver Behaviour Risk,2026-07-02 10:19:12.896886,2,Resolved,Schedule coaching,2026-07-23
+67,N6W5ETCNAH89Z1EFV,Brake Failure Risk,2026-06-25 10:19:12.896886,3,Resolved,Inspect brake system,2026-06-28
+68,UR2T16XNXLC84GZ2F,Battery Health Risk,2026-05-12 10:19:12.896886,2,Resolved,Battery diagnostic,2026-07-18
+69,AUSZZW48DHA6V7HC4,Driver Behaviour Risk,2026-06-02 10:19:12.896886,1,Open,Schedule coaching,
+70,VJV8M2T01S1MEVG69,Driver Behaviour Risk,2026-06-22 10:19:12.896886,3,In Progress,Schedule coaching,
+71,F9A9KERACAHP2TNZB,Engine Failure Risk,2026-06-25 10:19:12.896886,3,In Progress,Schedule engine inspection,
+72,VGE2G51HP4KPYHJMH,Tyre Wear Risk,2026-06-17 10:19:12.896886,2,Resolved,Replace tyres,2026-07-05
+73,VLJFSRS8S4HB7KXLC,Battery Health Risk,2026-07-24 10:19:12.896886,2,Open,Battery diagnostic,
+74,UWY9L1HJKCV5Y1GC9,Battery Health Risk,2026-07-16 10:19:12.896886,3,Resolved,Battery diagnostic,2026-07-22
+75,424CSE5LPGGBV9UC0,Driver Behaviour Risk,2026-07-09 10:19:12.896886,2,In Progress,Schedule coaching,
+76,6DFG5GT1YAFFPXCCJ,Tyre Wear Risk,2026-06-08 10:19:12.896886,4,Open,Replace tyres,
+77,ZUM8U2TA5BNN1MCHY,Tyre Wear Risk,2026-06-17 10:19:12.896886,2,Resolved,Replace tyres,2026-07-03
+78,69M6MG87PH0E1WFNY,Driver Behaviour Risk,2026-07-24 10:19:12.896886,4,Resolved,Schedule coaching,2026-07-09
+79,ZDAWDDGS4RBEP944V,Driver Behaviour Risk,2026-07-08 10:19:12.896886,2,Resolved,Schedule coaching,2026-07-22
+80,S0UA7ZWCSBUYLWL6L,Tyre Wear Risk,2026-05-16 10:19:12.896886,2,Open,Replace tyres,
+81,4B0N9CC7HTVVP14UB,Engine Failure Risk,2026-06-12 10:19:12.896886,2,Resolved,Schedule engine inspection,2026-07-19
+82,65HDXLFKD3AB2SWNC,Engine Failure Risk,2026-05-22 10:19:12.896886,3,In Progress,Schedule engine inspection,
+83,5C5D3G1Z5XRX233VU,Battery Health Risk,2026-07-14 10:19:12.896886,2,Open,Battery diagnostic,
+84,BAF5JFS6BN8THXM0A,Battery Health Risk,2026-07-25 10:19:12.896886,3,Open,Battery diagnostic,
+85,CZG4EWL03CVV5U7A0,Tyre Wear Risk,2026-07-05 10:19:12.896886,3,Resolved,Replace tyres,2026-07-17
+86,KH2JJE2YE1JCC02PA,Battery Health Risk,2026-05-15 10:19:12.896886,3,In Progress,Battery diagnostic,
+87,33DCNF325AA35XFX5,Brake Failure Risk,2026-07-06 10:19:12.896886,2,Resolved,Inspect brake system,2026-06-27
+88,P4P1LLJ8ZSDCR1NEB,Driver Behaviour Risk,2026-05-12 10:19:12.896886,1,In Progress,Schedule coaching,
+89,FUU1HAAKZUU4JMK70,Driver Behaviour Risk,2026-07-20 10:19:12.896886,2,Open,Schedule coaching,
+90,7M8KXG7VJPDCK8385,Tyre Wear Risk,2026-06-10 10:19:12.896886,2,Open,Replace tyres,
+91,TLUDKXVFF225XF89Y,Engine Failure Risk,2026-06-10 10:19:12.896886,3,Resolved,Schedule engine inspection,2026-07-22
+92,XJM3C8SJ0K4C9YBPN,Driver Behaviour Risk,2026-05-07 10:19:12.896886,4,In Progress,Schedule coaching,
+93,DX6MM7HDAP13UB35J,Engine Failure Risk,2026-07-05 10:19:12.896886,4,Open,Schedule engine inspection,
+94,038DFE9WAT3R06NUP,Engine Failure Risk,2026-07-03 10:19:12.896886,4,Open,Schedule engine inspection,
+95,F6FDGG001JKHBV4FM,Tyre Wear Risk,2026-05-01 10:19:12.896886,3,In Progress,Replace tyres,
+96,HEC4D246BM2ENF423,Engine Failure Risk,2026-06-07 10:19:12.896886,2,Resolved,Schedule engine inspection,2026-07-22
+97,XYJJ3JWSZHZ2UZ9LA,Brake Failure Risk,2026-06-30 10:19:12.896886,4,Open,Inspect brake system,
+98,PNBRSFA6Y8500GJZ8,Battery Health Risk,2026-06-27 10:19:12.896886,2,Open,Battery diagnostic,
+99,R349CYB09UXN7N2ZB,Brake Failure Risk,2026-06-13 10:19:12.896886,3,In Progress,Inspect brake system,
+100,TG7S0HS0GECBWSZRH,Tyre Wear Risk,2026-06-11 10:19:12.896886,4,In Progress,Replace tyres,
+101,1M2UNYGN6E1DW7YG0,Driver Behaviour Risk,2026-07-22 10:19:12.896886,2,Resolved,Schedule coaching,2026-07-15
+102,6GAYRJ7CRETTBJDY1,Brake Failure Risk,2026-07-03 10:19:12.896886,4,In Progress,Inspect brake system,
+103,NWUFA6D9DS95UEWYL,Driver Behaviour Risk,2026-07-21 10:19:12.896886,4,In Progress,Schedule coaching,
+104,D42W30NYEJSJLZS01,Brake Failure Risk,2026-06-15 10:19:12.896886,3,In Progress,Inspect brake system,
+105,F161P4WEL9UM7WNAY,Battery Health Risk,2026-06-06 10:19:12.896886,3,Resolved,Battery diagnostic,2026-07-22
+106,V1RXWZ1SJ0WSPB7H7,Driver Behaviour Risk,2026-04-26 10:19:12.896886,2,Open,Schedule coaching,
+107,6N9TT7U30CW4VLCYL,Battery Health Risk,2026-05-01 10:19:12.896886,1,Resolved,Battery diagnostic,2026-07-04
+108,D6ERZ18P1FPDTP8BN,Engine Failure Risk,2026-05-01 10:19:12.896886,2,Open,Schedule engine inspection,
+109,7M8KXG7VJPDCK8385,Tyre Wear Risk,2026-07-10 10:19:12.896886,3,Resolved,Replace tyres,2026-06-28
+110,6YLK8XSV1YDMHY7JB,Tyre Wear Risk,2026-06-14 10:19:12.896886,3,Resolved,Replace tyres,2026-07-12
+111,NVYL39DF5TJEXS0VH,Battery Health Risk,2026-07-01 10:19:12.896886,3,Resolved,Battery diagnostic,2026-07-21
+112,8FVAU274THG83J1NR,Battery Health Risk,2026-04-30 10:19:12.896886,3,In Progress,Battery diagnostic,
+113,KUTF8FY0W4V4ABYWY,Engine Failure Risk,2026-06-04 10:19:12.896886,3,In Progress,Schedule engine inspection,
+114,R38SPLDFPTYP2BCJD,Driver Behaviour Risk,2026-06-19 10:19:12.896886,3,In Progress,Schedule coaching,
+115,8HW0W30BYRS5BP31R,Engine Failure Risk,2026-05-03 10:19:12.896886,3,Resolved,Schedule engine inspection,2026-07-06
+116,LBX03DT0MYKPG101C,Tyre Wear Risk,2026-04-30 10:19:12.896886,3,In Progress,Replace tyres,
+117,3T1VPKRK7ZUXNYEUG,Engine Failure Risk,2026-05-02 10:19:12.896886,3,Resolved,Schedule engine inspection,2026-07-20
+118,SNVFRKYZX076DC4CA,Brake Failure Risk,2026-05-07 10:19:12.912543,2,Resolved,Inspect brake system,2026-07-05
+119,P86370GF9S6TCNSHW,Tyre Wear Risk,2026-04-30 10:19:12.912543,1,Open,Replace tyres,
+120,PNBRSFA6Y8500GJZ8,Tyre Wear Risk,2026-07-07 10:19:12.912543,2,Open,Replace tyres,
+121,YRZM52YG8R7BEFFL0,Brake Failure Risk,2026-05-08 10:19:12.912543,1,In Progress,Inspect brake system,
+122,KTTU3UA296DR5RBFY,Brake Failure Risk,2026-07-01 10:19:12.912543,3,Resolved,Inspect brake system,2026-07-07
+123,KUMSF6NY9PYXEX9W1,Battery Health Risk,2026-07-07 10:19:12.912543,3,Open,Battery diagnostic,
+124,2SD52J2RAUD94D0EM,Brake Failure Risk,2026-06-01 10:19:12.912543,4,Open,Inspect brake system,
+125,0RFE8E5VNL0VXYPL4,Engine Failure Risk,2026-05-27 10:19:12.912543,2,Resolved,Schedule engine inspection,2026-07-09
+126,GE9H1GN3E90YRDTBK,Brake Failure Risk,2026-05-28 10:19:12.912543,3,Open,Inspect brake system,
+127,TXTP0CUXKLTG3UNX4,Engine Failure Risk,2026-05-15 10:19:12.912543,3,Resolved,Schedule engine inspection,2026-07-09
+128,TAC8CZNL63FAFVXB9,Driver Behaviour Risk,2026-05-08 10:19:12.912543,2,In Progress,Schedule coaching,
+129,4YF1VSKZ8TZN0DPRA,Driver Behaviour Risk,2026-07-05 10:19:12.912543,3,Resolved,Schedule coaching,2026-07-11
+130,42U08F1A0775S0GZD,Battery Health Risk,2026-05-05 10:19:12.912543,3,Open,Battery diagnostic,
+131,KB5EGPV6SL02TXFXA,Tyre Wear Risk,2026-05-06 10:19:12.912543,3,Resolved,Replace tyres,2026-07-10
+132,7FKRT1DYME5RP2J3M,Engine Failure Risk,2026-06-19 10:19:12.912543,2,Open,Schedule engine inspection,
+133,K5299VMH6K2XYZXXT,Engine Failure Risk,2026-05-17 10:19:12.912543,2,In Progress,Schedule engine inspection,
+134,VTVUSVFBJWNZ2KCWE,Brake Failure Risk,2026-06-06 10:19:12.912543,2,Open,Inspect brake system,
+135,XBYYFAEATMU4JN151,Engine Failure Risk,2026-06-02 10:19:12.912543,3,Open,Schedule engine inspection,
+136,39V6XUWMK20Z0UJLW,Battery Health Risk,2026-06-02 10:19:12.912543,2,In Progress,Battery diagnostic,
+137,0DTHMS25H7A2GXNZA,Brake Failure Risk,2026-06-06 10:19:12.912543,2,In Progress,Inspect brake system,
+138,GSH124P57X4JKFZHH,Driver Behaviour Risk,2026-05-13 10:19:12.912543,4,Open,Schedule coaching,
+139,W31RABYX3EPXLCFU8,Battery Health Risk,2026-06-17 10:19:12.912543,3,In Progress,Battery diagnostic,
+140,R9KZSM26HKPRAGCVA,Battery Health Risk,2026-05-18 10:19:12.912543,4,In Progress,Battery diagnostic,
+141,MM1RRNP2P8M392A0G,Driver Behaviour Risk,2026-05-24 10:19:12.912543,3,Open,Schedule coaching,
+142,83EMAZB4RWASKCRX1,Engine Failure Risk,2026-07-22 10:19:12.912543,2,In Progress,Schedule engine inspection,
+143,030TF9WXHEB97RXDB,Battery Health Risk,2026-06-04 10:19:12.912543,2,Resolved,Battery diagnostic,2026-06-30
+144,PBJHLCZ5DFUBYPTPA,Engine Failure Risk,2026-05-07 10:19:12.912543,3,Open,Schedule engine inspection,
+145,20V9JUZFJJEFKK2M8,Driver Behaviour Risk,2026-05-11 10:19:12.912543,1,In Progress,Schedule coaching,
+146,F20AS7RHAK7MCXL0H,Driver Behaviour Risk,2026-05-04 10:19:12.912543,3,Open,Schedule coaching,
+147,TVYA14261MBX8TJ84,Battery Health Risk,2026-07-02 10:19:12.912543,2,In Progress,Battery diagnostic,
+148,6RMFL3F6FD7PVX0K4,Brake Failure Risk,2026-06-28 10:19:12.912543,2,In Progress,Inspect brake system,
+149,65HDXLFKD3AB2SWNC,Battery Health Risk,2026-06-20 10:19:12.912543,2,In Progress,Battery diagnostic,
+150,LMS15FBT5XWU4F3E3,Battery Health Risk,2026-05-26 10:19:12.912543,2,Open,Battery diagnostic,
+151,ER768UZ8R20UCMP2R,Brake Failure Risk,2026-06-11 10:19:12.912543,3,Open,Inspect brake system,
+152,3GBTBKDRWWHAA2WAS,Engine Failure Risk,2026-07-22 10:19:12.912543,3,Resolved,Schedule engine inspection,2026-07-24
+153,LBX03DT0MYKPG101C,Engine Failure Risk,2026-05-07 10:19:12.912543,2,Open,Schedule engine inspection,
+154,NEMBTF9MZ455KSJAX,Engine Failure Risk,2026-05-01 10:19:12.912543,2,In Progress,Schedule engine inspection,
+155,PNBRSFA6Y8500GJZ8,Brake Failure Risk,2026-05-27 10:19:12.912543,3,Open,Inspect brake system,
+156,A34U1LFVRVNXNB7R7,Tyre Wear Risk,2026-05-09 10:19:12.912543,3,Open,Replace tyres,
+157,M73KEZN9483KK0MRJ,Driver Behaviour Risk,2026-07-05 10:19:12.912543,4,Resolved,Schedule coaching,2026-07-22
+158,GZCSFFT38THV9MJZF,Tyre Wear Risk,2026-06-16 10:19:12.912543,2,Open,Replace tyres,
+159,EADA95GYYRX3GKSSA,Driver Behaviour Risk,2026-06-05 10:19:12.912543,3,In Progress,Schedule coaching,
+160,JZ43GPG586H87YX69,Engine Failure Risk,2026-05-06 10:19:12.912543,1,Resolved,Schedule engine inspection,2026-06-29
+161,MM1RRNP2P8M392A0G,Engine Failure Risk,2026-04-29 10:19:12.912543,2,In Progress,Schedule engine inspection,
+162,MZ9Y8TZLDMSVZP14K,Driver Behaviour Risk,2026-07-20 10:19:12.912543,3,Resolved,Schedule coaching,2026-06-30
+163,E6A9HL2847TVVDSFJ,Tyre Wear Risk,2026-07-17 10:19:12.912543,3,Resolved,Replace tyres,2026-07-14
+164,7V2NUMJTTD9S47NPV,Driver Behaviour Risk,2026-06-02 10:19:12.912543,3,Open,Schedule coaching,
+165,K884DGY9BM92G4VW3,Battery Health Risk,2026-05-05 10:19:12.912543,2,In Progress,Battery diagnostic,
+166,507Y3TEGE3AVN3VXC,Battery Health Risk,2026-07-03 10:19:12.912543,3,In Progress,Battery diagnostic,
+167,6HE3LWN1HPEF9RJWT,Driver Behaviour Risk,2026-05-08 10:19:12.912543,4,In Progress,Schedule coaching,
+168,LL9T0SKBFSYLBWN7M,Driver Behaviour Risk,2026-05-31 10:19:12.912543,3,In Progress,Schedule coaching,
+169,1KJAY57W0Z8JXWGRL,Driver Behaviour Risk,2026-07-14 10:19:12.912543,2,Open,Schedule coaching,
+170,WP6271URF5EHJ11GP,Tyre Wear Risk,2026-05-27 10:19:12.912543,4,Open,Replace tyres,
+171,ZPUXF7NEDHNV32DHX,Driver Behaviour Risk,2026-06-12 10:19:12.912543,3,In Progress,Schedule coaching,
+172,M5PVV62S0W2TSRR5L,Brake Failure Risk,2026-07-02 10:19:12.912543,3,In Progress,Inspect brake system,
+173,R62KFK7Z6SYCTFW6V,Battery Health Risk,2026-06-12 10:19:12.912543,2,In Progress,Battery diagnostic,
+174,YEVR4T2EUFJ88VB38,Tyre Wear Risk,2026-06-20 10:19:12.912543,4,Resolved,Replace tyres,2026-06-27
+175,8DJKLVZLWZGEVKCVX,Driver Behaviour Risk,2026-07-15 10:19:12.912543,1,Open,Schedule coaching,
+176,A227NHDP9MGZH634F,Engine Failure Risk,2026-05-15 10:19:12.912543,3,In Progress,Schedule engine inspection,

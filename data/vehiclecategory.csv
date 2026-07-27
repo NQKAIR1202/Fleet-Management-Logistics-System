@@ -1,0 +1,6 @@
+VehicleCategoryID,CategoryName,Description
+1,Delivery Van,Standard parcel delivery vehicle
+2,Refrigerated Truck,Cold-chain transportation vehicle
+3,Electric Van,Electric commercial delivery vehicle
+4,Service Vehicle,Maintenance and field support vehicle
+5,Heavy Transport Truck,Heavy-duty freight transport vehicle

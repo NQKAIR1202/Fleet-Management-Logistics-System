@@ -1,0 +1,13 @@
+ActivityTypeID,ActivityTypeName,Description
+1,Oil Change,Oil Change activity
+2,Brake Inspection,Brake Inspection activity
+3,Brake Replacement,Brake Replacement activity
+4,Tyre Replacement,Tyre Replacement activity
+5,Battery Check,Battery Check activity
+6,Battery Replacement,Battery Replacement activity
+7,Transmission Repair,Transmission Repair activity
+8,Coolant Replacement,Coolant Replacement activity
+9,Air Filter Replacement,Air Filter Replacement activity
+10,Engine Diagnostic,Engine Diagnostic activity
+11,Refrigeration Unit Repair,Refrigeration Unit Repair activity
+12,EV System Inspection,EV System Inspection activity

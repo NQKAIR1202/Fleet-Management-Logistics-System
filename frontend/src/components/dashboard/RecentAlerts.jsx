@@ -1,0 +1,113 @@
+import {
+  Card,
+  CardContent,
+  Typography,
+  Table,
+  TableHead,
+  TableRow,
+  TableCell,
+  TableBody,
+  Chip,
+} from "@mui/material";
+
+
+
+function getColor(level) {
+  switch (level) {
+    case "High":
+      return "error";
+    case "Medium":
+      return "warning";
+    default:
+      return "success";
+  }
+}
+
+function RecentAlerts({ alerts = [] }) {
+  return (
+    <Card
+      elevation={2}
+      sx={{
+        borderRadius: 2,
+        height: "100%",
+      }}
+    >
+      <CardContent>
+
+        <Typography
+          variant="h6"
+          fontWeight="bold"
+          mb={2}
+        >
+          Recent Alerts
+        </Typography>
+
+        {alerts.length === 0 ? (
+
+            <Typography color="text.secondary">
+
+                No recent alerts.
+
+            </Typography>
+
+        ) : (
+
+        <Table size="small">
+
+          <TableHead>
+
+            <TableRow>
+
+              <TableCell>Vehicle</TableCell>
+
+              <TableCell>Alert</TableCell>
+
+              <TableCell>Status</TableCell>
+
+            </TableRow>
+
+          </TableHead>
+
+          <TableBody>
+
+            {alerts.map((item) => (
+
+              <TableRow key={item.vehicle}>
+
+                <TableCell>
+
+                  {item.vehicle}
+
+                </TableCell>
+
+                <TableCell>
+
+                  {item.type}
+
+                </TableCell>
+
+                <TableCell>
+
+                  <Chip
+                    label={item.severity}
+                    color={getColor(item.severity)}
+                    size="small"
+                  />
+
+                </TableCell>
+
+              </TableRow>
+
+            ))}
+
+          </TableBody>
+
+        </Table>
+        )}
+
+      </CardContent>
+    </Card>
+  );
+}
+
+export default RecentAlerts;

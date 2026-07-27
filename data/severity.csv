@@ -1,0 +1,5 @@
+SeverityID,SeverityName,PenaltyPoints,ReviewRequired
+1,Low,5,False
+2,Medium,10,False
+3,High,20,True
+4,Critical,40,True

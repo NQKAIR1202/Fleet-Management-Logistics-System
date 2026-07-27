@@ -1,0 +1,41 @@
+StaffID,FullName,Role,DepotID,ContactInfo
+1,Duong Anh Dat,Fleet Manager,1,0349814240
+2,Vu Duc Tuan,Safety Officer,4,0949957129
+3,Dang Thi Van,Safety Officer,1,0335581901
+4,Do Bao Mai,Fleet Manager,2,0905645592
+5,Thomas Weber,Workshop Manager,3,0791649906
+6,Tran Ngoc Phuong,Workshop Manager,3,0369883187
+7,Ngo Phuong Anh,HR Officer,3,0931828712
+8,Phan Minh Nghia,HR Officer,3,0844980420
+9,Do Kim Ha,HR Officer,4,0857519610
+10,Dang Quoc Tai,Workshop Manager,1,0763990366
+11,Dang Gia Khoa,HR Officer,2,0398988073
+12,Ngo Bao Hong,Workshop Manager,1,0798828437
+13,Nguyen Minh Son,Safety Officer,3,0349263959
+14,Hoang Quoc Hieu,Safety Officer,1,0355374918
+15,Nguyen Gia An,Operations Coordinator,2,0784996619
+16,Hans Muller,HR Officer,4,0774214969
+17,Hoang Thu Phuong,Procurement Officer,1,0762456442
+18,Ji-Hoon Park,Procurement Officer,2,0930563876
+19,Pham Quoc An,Fleet Manager,2,0836748573
+20,Le Van Trung,Procurement Officer,1,0974195028
+21,Ngo Bao Nghia,Operations Coordinator,3,0978675858
+22,Vo Quynh Hong,Procurement Officer,2,0922742472
+23,Ly Anh Cuong,Workshop Manager,2,0393124340
+24,Vu Hong Trinh,Fleet Manager,4,0830378947
+25,Bui Minh Viet,Workshop Manager,3,0814367789
+26,Dang Thi Mai,Operations Coordinator,1,0346140323
+27,Vu Kim Yen,Procurement Officer,4,0708470920
+28,Nguyen Thi Hoa,Workshop Manager,1,0911165267
+29,Bui Huu Trung,Procurement Officer,2,0761036937
+30,David Miller,Operations Coordinator,2,0356368750
+31,Do Thanh Cuong,Operations Coordinator,3,0328819687
+32,Ho Anh Loc,Safety Officer,4,0824728808
+33,Vo Tien Khoa,HR Officer,4,0770812738
+34,Hoang Phuong Anh,Operations Coordinator,2,0342452474
+35,Hoang Minh Son,HR Officer,2,0766353953
+36,Hoang Duc Long,Fleet Manager,2,0771571247
+37,Dang Hong Huong,Fleet Manager,2,0762105295
+38,Le Quynh Dung,Procurement Officer,1,0902439281
+39,Vo Huu Hieu,HR Officer,1,0361539176
+40,Pham Phuong Mai,Maintenance Planner,4,0768936679

@@ -1,0 +1,9 @@
+faker
+pandas
+numpy
+openpyxl
+mysql-connector-python
+pandas
+sqlalchemy
+pymysql
+python-dotenv

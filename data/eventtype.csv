@@ -1,0 +1,9 @@
+EventTypeID,EventTypeName
+1,Harsh Braking
+2,Speeding
+3,Fatigue Warning
+4,Rapid Acceleration
+5,Sharp Cornering
+6,Engine Warning
+7,Seatbelt Violation
+8,Phone Distraction
