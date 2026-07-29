@@ -13,12 +13,16 @@ function ChartCard({ title, children }) {
         height: "100%",
       }}
     >
-      <CardContent>
+      <CardContent
+sx={{
+p:4
+}}
+>
 
         <Typography
           variant="h6"
           fontWeight="bold"
-          mb={2}
+          mb={3}
         >
           {title}
         </Typography>

@@ -32,7 +32,11 @@ function RecentAlerts({ alerts = [] }) {
         height: "100%",
       }}
     >
-      <CardContent>
+      <CardContent
+sx={{
+p:4
+}}
+>
 
         <Typography
           variant="h6"

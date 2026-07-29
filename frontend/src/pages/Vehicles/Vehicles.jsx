@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
 
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
-import CircularProgress from "@mui/material/CircularProgress";
+import {
+    Typography,
+    Box,
+    CircularProgress,
+    Stack,
+} from "@mui/material";
 
 import VehicleToolbar from "../../components/vehicles/VehicleToolbar";
 import VehicleTable from "../../components/vehicles/VehicleTable";
@@ -15,6 +18,8 @@ import {
     createVehicle,
     updateVehicle,
     deleteVehicle,
+    getDepots,
+    getVehicleCategories,
 } from "../../services/vehicleService";
 
 function Vehicles() {
@@ -22,6 +27,18 @@ function Vehicles() {
     const [vehicles, setVehicles] = useState([]);
     const [filteredVehicles, setFilteredVehicles] = useState([]);
     const [search, setSearch] = useState("");
+    const [statusFilter, setStatusFilter] = useState("All");
+    const [depotFilter, setDepotFilter] = useState("All");
+
+    const [categoryFilter, setCategoryFilter] = useState("All");
+
+    const [manufacturerFilter, setManufacturerFilter] = useState("All");
+
+    const [depots, setDepots] = useState([]);
+
+    const [categories, setCategories] = useState([]);
+
+    const [manufacturers, setManufacturers] = useState([]);
     const [loading, setLoading] = useState(true);
 
     const [selectedVehicle, setSelectedVehicle] = useState(null);
@@ -35,57 +52,170 @@ function Vehicles() {
     const [deletingVehicle, setDeletingVehicle] = useState(null);
 
     useEffect(() => {
-        loadVehicles();
+
+        loadData();
+
     }, []);
 
     useEffect(() => {
+
         filterVehicles();
-    }, [search, vehicles]);
 
-    async function loadVehicles() {
+   }, [
 
-        try {
+    search,
 
-            const data = await getVehicles();
+    statusFilter,
 
-            // Soft Delete: ẩn xe đã Retired
-            const activeVehicles = data.filter(
-                vehicle => vehicle.OperationalStatus !== "Retired"
-            );
+    depotFilter,
 
-            setVehicles(activeVehicles);
-            setFilteredVehicles(activeVehicles);
+    categoryFilter,
 
-        } catch (err) {
+    manufacturerFilter,
 
-            console.error(err);
+    vehicles,
 
-        } finally {
+]);
 
-            setLoading(false);
+    async function loadData() {
 
-        }
+    try {
+
+        const [
+
+            vehicleData,
+
+            depotData,
+
+            categoryData,
+
+        ] = await Promise.all([
+
+            getVehicles(),
+
+            getDepots(),
+
+            getVehicleCategories(),
+
+        ]);
+
+        const activeVehicles = vehicleData.filter(
+
+            vehicle =>
+
+                vehicle.OperationalStatus !== "Retired"
+
+        );
+
+        setVehicles(activeVehicles);
+
+        setFilteredVehicles(activeVehicles);
+
+        setDepots(depotData);
+
+        setCategories(categoryData);
+
+        setManufacturers(
+
+            [
+
+                ...new Set(
+
+                    activeVehicles
+
+                        .map(v => v.Manufacturer)
+
+                        .filter(Boolean)
+
+                ),
+
+            ].sort()
+
+        );
+
     }
+
+    catch (err) {
+
+        console.error(err);
+
+    }
+
+    finally {
+
+        setLoading(false);
+
+    }
+
+}
 
     function filterVehicles() {
 
-        const keyword = search.toLowerCase();
+    const keyword = search.toLowerCase();
 
-        const result = vehicles.filter(vehicle =>
+    const result = vehicles.filter(vehicle => {
+
+        const matchSearch =
 
             vehicle.VIN.toLowerCase().includes(keyword) ||
 
             vehicle.RegistrationNumber.toLowerCase().includes(keyword) ||
 
-            (vehicle.Manufacturer ?? "").toLowerCase().includes(keyword) ||
+            (vehicle.Manufacturer ?? "")
 
-            (vehicle.Model ?? "").toLowerCase().includes(keyword)
+                .toLowerCase()
+
+                .includes(keyword) ||
+
+            (vehicle.Model ?? "")
+
+                .toLowerCase()
+
+                .includes(keyword);
+
+        const matchStatus =
+
+            statusFilter === "All" ||
+
+            vehicle.OperationalStatus === statusFilter;
+
+        const matchDepot =
+
+            depotFilter === "All" ||
+
+            vehicle.DepotID === Number(depotFilter);
+
+        const matchCategory =
+
+            categoryFilter === "All" ||
+
+            vehicle.VehicleCategoryID === Number(categoryFilter);
+
+        const matchManufacturer =
+
+            manufacturerFilter === "All" ||
+
+            vehicle.Manufacturer === manufacturerFilter;
+
+        return (
+
+            matchSearch &&
+
+            matchStatus &&
+
+            matchDepot &&
+
+            matchCategory &&
+
+            matchManufacturer
 
         );
 
-        setFilteredVehicles(result);
+    });
 
-    }
+    setFilteredVehicles(result);
+
+}   
 
     function handleView(vehicle) {
 
@@ -168,6 +298,7 @@ function Vehicles() {
             }
 
             handleFormClose();
+
             await loadVehicles();
 
         } catch (err) {
@@ -178,6 +309,20 @@ function Vehicles() {
 
     }
 
+    function handleResetFilters() {
+
+    setSearch("");
+
+    setStatusFilter("All");
+
+    setDepotFilter("All");
+
+    setCategoryFilter("All");
+
+    setManufacturerFilter("All");
+
+}
+
     if (loading) {
 
         return (
@@ -185,7 +330,8 @@ function Vehicles() {
             <Box
                 display="flex"
                 justifyContent="center"
-                mt={10}
+                alignItems="center"
+                minHeight="70vh"
             >
                 <CircularProgress />
             </Box>
@@ -196,25 +342,49 @@ function Vehicles() {
 
     return (
 
-        <>
+        <Stack spacing={4}>
 
-            <Typography
-                variant="h4"
-                fontWeight="bold"
-            >
-                Vehicles
-            </Typography>
+            <Box>
 
-            <Typography
-                color="text.secondary"
-                mb={3}
-            >
-                Manage all fleet vehicles.
-            </Typography>
+                <Typography
+                    variant="h3"
+                    fontWeight={700}
+                    gutterBottom
+                >
+                    Vehicles
+                </Typography>
+
+                <Typography
+                    variant="h6"
+                    color="text.secondary"
+                >
+                    Manage all fleet vehicles.
+                </Typography>
+
+            </Box>
 
             <VehicleToolbar
                 search={search}
                 setSearch={setSearch}
+
+                statusFilter={statusFilter}
+                setStatusFilter={setStatusFilter}
+
+                depotFilter={depotFilter}
+                setDepotFilter={setDepotFilter}
+
+                categoryFilter={categoryFilter}
+                setCategoryFilter={setCategoryFilter}
+
+                manufacturerFilter={manufacturerFilter}
+                setManufacturerFilter={setManufacturerFilter}
+
+                depots={depots}
+                categories={categories}
+                manufacturers={manufacturers}
+
+                onReset={handleResetFilters}
+
                 onAdd={handleAdd}
             />
 
@@ -243,13 +413,15 @@ function Vehicles() {
                 open={deleteOpen}
                 vehicle={deletingVehicle}
                 onClose={() => {
+
                     setDeleteOpen(false);
                     setDeletingVehicle(null);
+
                 }}
                 onConfirm={confirmDelete}
             />
 
-        </>
+        </Stack>
 
     );
 

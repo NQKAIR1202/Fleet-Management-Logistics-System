@@ -23,11 +23,15 @@ function StatCard({
 
         "&:hover": {
           transform: "translateY(-5px)",
-          boxShadow: "0 10px 25px rgba(0,0,0,.12)",
+          boxShadow:"0 6px 16px rgba(0,0,0,.08)",
         },
       }}
     >
-      <CardContent>
+      <CardContent
+    sx={{
+        p: 3.5,
+    }}
+>
 
         <Stack
           direction="row"
@@ -46,7 +50,7 @@ function StatCard({
             </Typography>
 
             <Typography
-              variant="h3"
+              variant="h4"
               fontWeight="bold"
             >
               {value}
@@ -67,9 +71,9 @@ function StatCard({
 
           <Box
             sx={{
-              width: 64,
-              height: 64,
-              borderRadius: "5  0%",
+              width: 72,
+              height: 72,
+              borderRadius: 4,
               bgcolor: `${color}15`,
               display: "flex",
               justifyContent: "center",

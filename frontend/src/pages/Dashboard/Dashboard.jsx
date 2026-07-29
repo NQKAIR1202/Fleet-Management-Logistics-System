@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
 
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
-import CircularProgress from "@mui/material/CircularProgress";
+import {
+    Typography,
+    Box,
+    CircularProgress,
+    Stack,
+} from "@mui/material";
 
 import SummaryCards from "../../components/dashboard/SummaryCards";
 import VehicleChart from "../../components/charts/VehicleChart";
@@ -17,15 +20,11 @@ import {
 export default function Dashboard() {
 
     const [summary, setSummary] = useState(null);
-
     const [charts, setCharts] = useState(null);
-
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-
         loadDashboard();
-
     }, []);
 
     async function loadDashboard() {
@@ -33,101 +32,88 @@ export default function Dashboard() {
         try {
 
             const [summaryData, chartData] = await Promise.all([
-
                 getDashboardSummary(),
-
                 getDashboardCharts(),
-
             ]);
 
             setSummary(summaryData);
-
             setCharts(chartData);
 
-        }
-
-        catch (err) {
+        } catch (err) {
 
             console.error(err);
 
-        }
-
-        finally {
+        } finally {
 
             setLoading(false);
 
         }
-
     }
 
     if (loading) {
 
         return (
-
             <Box
                 display="flex"
                 justifyContent="center"
-                mt={10}
+                alignItems="center"
+                minHeight="70vh"
             >
-
                 <CircularProgress />
-
             </Box>
-
         );
-
     }
 
     return (
 
-        <>
+        <Stack spacing={5}>
 
-            <Typography
-                variant="h3"
-                fontWeight="bold"
-                mb={1}
-            >
+            {/* Header */}
 
-                Fleet Dashboard
+            <Box>
 
-            </Typography>
+                <Typography
+                    variant="h3"
+                    fontWeight={700}
+                    sx={{
+                        mb: 1,
+                    }}
+                >
+                    Fleet Dashboard
+                </Typography>
 
-            <Typography
-                variant="h6"
-                color="text.secondary"
-                mb={5}
-            >
-
-                Good Morning, Administrator 👋
-
-            </Typography>
-
-            <SummaryCards summary={summary} />
-
-            {charts && (
-
-                <Box mt={5}>
-
-                    <ChartCard title="Vehicle Status">
-
-                        <VehicleChart
-                            data={charts.vehicleStatus ?? []}
-                        />
-
-                    </ChartCard>
-
-                </Box>
-
-            )}
-
-            <Box mt={5}>
-
-                <RecentAlerts />
+                <Typography
+                    variant="h6"
+                    color="text.secondary"
+                >
+                    Good Morning, Administrator 👋
+                </Typography>
 
             </Box>
 
-        </>
+            {/* Summary */}
+
+            <SummaryCards summary={summary} />
+
+            {/* Vehicle Status */}
+
+            {charts && (
+
+                <ChartCard title="Vehicle Status">
+
+                    <VehicleChart
+                        data={charts.vehicleStatus ?? []}
+                    />
+
+                </ChartCard>
+
+            )}
+
+            {/* Alerts */}
+
+            <RecentAlerts />
+
+        </Stack>
 
     );
-
 }

@@ -23,7 +23,7 @@ import { NavLink, useLocation } from "react-router-dom";
 
 import Logo from "./Logo";
 
-const drawerWidth = 260;
+const drawerWidth = 280;
 
 const menus = [
   {
@@ -110,7 +110,7 @@ function Sidebar() {
               sx={{
                 borderRadius: 3,
                 mb: 1,
-                py: 1.2,
+                py: 1.5,
 
                 transition: "all .25s",
 

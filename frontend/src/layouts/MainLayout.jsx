@@ -18,14 +18,25 @@ function MainLayout() {
       <Sidebar />
 
       <Box
-        component="main"
-        sx={{
-          flexGrow: 1,
-          bgcolor: "background.default",
-          minHeight: "100vh",
-          p: 4,
-        }}
-      >
+    component="main"
+    sx={{
+        flexGrow:1,
+        bgcolor:"background.default",
+
+        minHeight:"100vh",
+
+        px:{
+            xs:3,
+            md:6,
+        },
+
+        py:5,
+
+        maxWidth:"1800px",
+
+        mx:"auto",
+    }}
+>
         <Toolbar />
 
         <Outlet />

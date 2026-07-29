@@ -25,39 +25,57 @@ const theme = createTheme({
     },
 
     background: {
-      default: "#ceceeb",
-      paper: "#FFFFFF",
+        default: "#b1c7e9",
+        paper: "#FFFFFF",
     },
   },
 
   shape: {
-    borderRadius: 16,
+    borderRadius: 20,
   },
 
   typography: {
     fontFamily: "Inter, Roboto, Arial, sans-serif",
 
     h4: {
-      fontWeight: 700,
+        fontWeight: 700,
+        fontSize: "2rem",
     },
 
     h5: {
-      fontWeight: 700,
+        fontWeight: 700,
+        fontSize: "1.5rem",
     },
 
     h6: {
-      fontWeight: 600,
+        fontWeight: 600,
     },
-  },
+},
 
   components: {
-    MuiCard: {
-      styleOverrides: {
+MuiCard: {
+    styleOverrides: {
         root: {
-          borderRadius: 16,
+            borderRadius: 20,
+
+            boxShadow:
+                "0 8px 24px rgba(15,23,42,.08)",
+
+            transition:
+                "all .2s ease",
+
+            "&:hover": {
+
+                transform:
+                    "translateY(-2px)",
+
+                boxShadow:
+                    "0 12px 32px rgba(15,23,42,.12)",
+
+            },
         },
-      },
     },
+},
 
     MuiDrawer: {
       styleOverrides: {
