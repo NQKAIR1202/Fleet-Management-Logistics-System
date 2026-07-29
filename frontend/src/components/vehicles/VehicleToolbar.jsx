@@ -1,374 +1,206 @@
 import {
-    Box,
-    Button,
-    TextField,
-    FormControl,
-    InputLabel,
-    Select,
-    MenuItem,
-    Stack,
+  Box,
+  Button,
+  TextField,
+  FormControl,
+  InputLabel,
+  Select,
+  MenuItem,
+  Stack,
 } from "@mui/material";
 
 import AddIcon from "@mui/icons-material/Add";
 import RestartAltIcon from "@mui/icons-material/RestartAlt";
 
 function VehicleToolbar({
+  search,
+  setSearch,
 
-    search,
-    setSearch,
+  statusFilter,
+  setStatusFilter,
 
-    statusFilter,
-    setStatusFilter,
+  depotFilter,
+  setDepotFilter,
 
-    depotFilter,
-    setDepotFilter,
+  categoryFilter,
+  setCategoryFilter,
 
-    categoryFilter,
-    setCategoryFilter,
+  manufacturerFilter,
+  setManufacturerFilter,
 
-    manufacturerFilter,
-    setManufacturerFilter,
+  depots,
+  categories,
+  manufacturers,
 
-    depots,
-    categories,
-    manufacturers,
+  onReset,
 
-    onReset,
-
-    onAdd,
-
+  onAdd,
 }) {
+  return (
+    <Stack spacing={3}>
+      <TextField
+        fullWidth
+        placeholder="Search VIN, Registration, Manufacturer..."
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+        sx={{
+          "& .MuiOutlinedInput-root": {
+            bgcolor: "background.paper",
+            borderRadius: 2,
 
-    return (
+            "& fieldset": {
+              borderColor: "divider",
+            },
 
-        <Stack spacing={3}>
+            "&:hover fieldset": {
+              borderColor: "primary.main",
+            },
 
-            {/* Search */}
+            "&.Mui-focused fieldset": {
+              borderColor: "primary.main",
+            },
+          },
+        }}
+      />
 
-            <TextField
+      <Box
+        sx={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-between",
+          alignItems: "center",
+          gap: 2,
+        }}
+      >
+        <Box
+          sx={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: 2,
+          }}
+        >
+          <FormControl sx={{ minWidth: 180 }}>
+            <InputLabel>Status</InputLabel>
 
-                fullWidth
-
-                placeholder="Search VIN, Registration, Manufacturer..."
-
-                value={search}
-
-                onChange={(e) =>
-                    setSearch(e.target.value)
-                }
-
-            />
-
-            {/* Filters */}
-
-            <Box
-
-                sx={{
-
-                    display: "flex",
-
-                    flexWrap: "wrap",
-
-                    gap: 2,
-
-                    alignItems: "center",
-
-                    justifyContent: "space-between",
-
-                }}
-
+            <Select
+              value={statusFilter}
+              label="Status"
+              onChange={(e) => setStatusFilter(e.target.value)}
             >
+              <MenuItem value="All">All Status</MenuItem>
+              <MenuItem value="Available">Available</MenuItem>
+              <MenuItem value="Assigned">Assigned</MenuItem>
+              <MenuItem value="Maintenance">Maintenance</MenuItem>
+              <MenuItem value="Out Of Service">Out Of Service</MenuItem>
+              <MenuItem value="Retired">Retired</MenuItem>
+            </Select>
+          </FormControl>
 
-                <Box
+          <FormControl sx={{ minWidth: 220 }}>
+            <InputLabel>Depot</InputLabel>
 
-                    sx={{
+            <Select
+              value={depotFilter}
+              label="Depot"
+              onChange={(e) => setDepotFilter(e.target.value)}
+            >
+              <MenuItem value="All">All Depots</MenuItem>
 
-                        display: "flex",
-
-                        flexWrap: "wrap",
-
-                        gap: 2,
-
-                    }}
-
+              {depots.map((depot) => (
+                <MenuItem
+                  key={depot.DepotID}
+                  value={depot.DepotID}
                 >
-
-                    {/* Status */}
-
-                    <FormControl sx={{ minWidth: 180 }}>
-
-                        <InputLabel>Status</InputLabel>
-
-                        <Select
-
-                            value={statusFilter}
-
-                            label="Status"
-
-                            onChange={(e) =>
-                                setStatusFilter(e.target.value)
-                            }
-
-                        >
-
-                            <MenuItem value="All">
-
-                                All Status
-
-                            </MenuItem>
-
-                            <MenuItem value="Available">
-
-                                Available
-
-                            </MenuItem>
-
-                            <MenuItem value="Assigned">
-
-                                Assigned
-
-                            </MenuItem>
-
-                            <MenuItem value="Maintenance">
-
-                                Maintenance
-
-                            </MenuItem>
-
-                            <MenuItem value="Out Of Service">
-
-                                Out Of Service
-
-                            </MenuItem>
-
-                            <MenuItem value="Retired">
-
-                                Retired
-
-                            </MenuItem>
-
-                        </Select>
-
-                    </FormControl>
-
-                    {/* Depot */}
-
-                    <FormControl sx={{ minWidth: 220 }}>
-
-                        <InputLabel>Depot</InputLabel>
-
-                        <Select
-
-                            value={depotFilter}
-
-                            label="Depot"
-
-                            onChange={(e) =>
-                                setDepotFilter(e.target.value)
-                            }
-
-                        >
-
-                            <MenuItem value="All">
-
-                                All Depots
-
-                            </MenuItem>
-
-                            {
-
-                                depots.map(depot => (
-
-                                    <MenuItem
-
-                                        key={depot.DepotID}
-
-                                        value={depot.DepotID}
-
-                                    >
-
-                                        {depot.DepotName}
-
-                                    </MenuItem>
-
-                                ))
-
-                            }
-
-                        </Select>
-
-                    </FormControl>
-
-                    {/* Category */}
-
-                    <FormControl sx={{ minWidth: 220 }}>
-
-                        <InputLabel>Category</InputLabel>
-
-                        <Select
-
-                            value={categoryFilter}
-
-                            label="Category"
-
-                            onChange={(e) =>
-                                setCategoryFilter(e.target.value)
-                            }
-
-                        >
-
-                            <MenuItem value="All">
-
-                                All Categories
-
-                            </MenuItem>
-
-                            {
-
-                                categories.map(category => (
-
-                                    <MenuItem
-
-                                        key={category.VehicleCategoryID}
-
-                                        value={category.VehicleCategoryID}
-
-                                    >
-
-                                        {category.CategoryName}
-
-                                    </MenuItem>
-
-                                ))
-
-                            }
-
-                        </Select>
-
-                    </FormControl>
-
-                    {/* Manufacturer */}
-
-                    <FormControl sx={{ minWidth: 220 }}>
-
-                        <InputLabel>
-
-                            Manufacturer
-
-                        </InputLabel>
-
-                        <Select
-
-                            value={manufacturerFilter}
-
-                            label="Manufacturer"
-
-                            onChange={(e) =>
-                                setManufacturerFilter(
-                                    e.target.value
-                                )
-                            }
-
-                        >
-
-                            <MenuItem value="All">
-
-                                All Manufacturers
-
-                            </MenuItem>
-
-                            {
-
-                                manufacturers.map(name => (
-
-                                    <MenuItem
-
-                                        key={name}
-
-                                        value={name}
-
-                                    >
-
-                                        {name}
-
-                                    </MenuItem>
-
-                                ))
-
-                            }
-
-                        </Select>
-
-                    </FormControl>
-
-                </Box>
-
-                {/* Right Buttons */}
-
-                <Box
-
-                    sx={{
-
-                        display: "flex",
-
-                        gap: 2,
-
-                    }}
-
+                  {depot.DepotName}
+                </MenuItem>
+              ))}
+            </Select>
+          </FormControl>
+
+          <FormControl sx={{ minWidth: 220 }}>
+            <InputLabel>Category</InputLabel>
+
+            <Select
+              value={categoryFilter}
+              label="Category"
+              onChange={(e) => setCategoryFilter(e.target.value)}
+            >
+              <MenuItem value="All">All Categories</MenuItem>
+
+              {categories.map((category) => (
+                <MenuItem
+                  key={category.VehicleCategoryID}
+                  value={category.VehicleCategoryID}
                 >
+                  {category.CategoryName}
+                </MenuItem>
+              ))}
+            </Select>
+          </FormControl>
 
-                    <Button
+          <FormControl sx={{ minWidth: 220 }}>
+            <InputLabel>Manufacturer</InputLabel>
 
-                        variant="outlined"
+            <Select
+              value={manufacturerFilter}
+              label="Manufacturer"
+              onChange={(e) =>
+                setManufacturerFilter(e.target.value)
+              }
+            >
+              <MenuItem value="All">
+                All Manufacturers
+              </MenuItem>
 
-                        color="inherit"
+              {manufacturers.map((name) => (
+                <MenuItem
+                  key={name}
+                  value={name}
+                >
+                  {name}
+                </MenuItem>
+              ))}
+            </Select>
+          </FormControl>
+        </Box>
 
-                        startIcon={<RestartAltIcon />}
+        <Box
+          sx={{
+            display: "flex",
+            gap: 2,
+          }}
+        >
+          <Button
+            variant="outlined"
+            color="inherit"
+            startIcon={<RestartAltIcon />}
+            onClick={onReset}
+            sx={{
+              textTransform: "none",
+              borderRadius: 2,
+            }}
+          >
+            Reset
+          </Button>
 
-                        onClick={onReset}
-
-                    >
-
-                        Reset
-
-                    </Button>
-
-                    <Button
-
-                        variant="contained"
-
-                        startIcon={<AddIcon />}
-
-                        onClick={onAdd}
-
-                        sx={{
-
-                            px: 3,
-
-                            py: 1.2,
-
-                            borderRadius: 3,
-
-                            textTransform: "none",
-
-                            fontWeight: 600,
-
-                        }}
-
-                    >
-
-                        Add Vehicle
-
-                    </Button>
-
-                </Box>
-
-            </Box>
-
-        </Stack>
-
-    );
-
+          <Button
+            variant="contained"
+            startIcon={<AddIcon />}
+            onClick={onAdd}
+            sx={{
+              px: 3,
+              py: 1.2,
+              borderRadius: 2,
+              textTransform: "none",
+              fontWeight: 600,
+            }}
+          >
+            Add Vehicle
+          </Button>
+        </Box>
+      </Box>
+    </Stack>
+  );
 }
 
 export default VehicleToolbar;

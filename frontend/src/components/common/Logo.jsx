@@ -10,6 +10,7 @@ function Logo() {
         gap: 2,
         px: 3,
         py: 2,
+        flexShrink: 0,
       }}
     >
       <Box
@@ -17,11 +18,11 @@ function Logo() {
           width: 52,
           height: 52,
           bgcolor: "primary.main",
+          color: "primary.contrastText",
           borderRadius: 3,
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          color: "#fff",
         }}
       >
         <FaTruckMoving size={26} />

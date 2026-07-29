@@ -128,16 +128,12 @@ function VehicleFormDialog({
 
             </DialogTitle>
 
-            <DialogContent>
+            <DialogContent dividers>
 
                 <Grid
-
                     container
-
-                    spacing={2}
-
-                    mt={1}
-
+                    spacing={2.5}
+                    sx={{ mt: 0.5 }}
                 >
 
                     <Grid size={6}>
@@ -384,12 +380,16 @@ function VehicleFormDialog({
 
             </DialogContent>
 
-            <DialogActions>
+            <DialogActions
+                sx={{
+                    px:3,
+                    py:2
+                }}
+            >`
 
                 <Button
-
+                    color="inherit"
                     onClick={onClose}
-
                 >
 
                     Cancel

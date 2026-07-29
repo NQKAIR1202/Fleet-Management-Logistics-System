@@ -1,87 +1,62 @@
 import {
-    Dialog,
-    DialogTitle,
-    DialogContent,
-    DialogContentText,
-    DialogActions,
-    Button,
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogContentText,
+  DialogActions,
+  Button,
 } from "@mui/material";
 
 function DeleteVehicleDialog({
-
-    open,
-
-    vehicle,
-
-    onClose,
-
-    onConfirm,
-
+  open,
+  vehicle,
+  onClose,
+  onConfirm,
 }) {
+  return (
+    <Dialog
+      open={open}
+      onClose={onClose}
+      maxWidth="xs"
+      fullWidth
+    >
+      <DialogTitle>
+        Delete Vehicle
+      </DialogTitle>
 
-    return (
+      <DialogContent dividers>
+        <DialogContentText>
+          Are you sure you want to delete this vehicle?
+          <br />
+          <br />
 
-        <Dialog
-            open={open}
-            onClose={onClose}
+          <strong>
+            {vehicle?.RegistrationNumber}
+          </strong>
+
+          <br />
+
+          VIN: {vehicle?.VIN}
+        </DialogContentText>
+      </DialogContent>
+
+      <DialogActions>
+        <Button
+          onClick={onClose}
         >
+          Cancel
+        </Button>
 
-            <DialogTitle>
-
-                Delete Vehicle
-
-            </DialogTitle>
-
-            <DialogContent>
-
-                <DialogContentText>
-
-                    Are you sure you want to delete this vehicle?
-
-                    <br /><br />
-
-                    <strong>
-
-                        {vehicle?.RegistrationNumber}
-
-                    </strong>
-
-                    <br />
-
-                    VIN: {vehicle?.VIN}
-
-                </DialogContentText>
-
-            </DialogContent>
-
-            <DialogActions>
-
-                <Button onClick={onClose}>
-
-                    Cancel
-
-                </Button>
-
-                <Button
-
-                    color="error"
-
-                    variant="contained"
-
-                    onClick={onConfirm}
-
-                >
-
-                    Delete
-
-                </Button>
-
-            </DialogActions>
-
-        </Dialog>
-
-    );
-
+        <Button
+          variant="contained"
+          color="error"
+          onClick={onConfirm}
+        >
+          Delete
+        </Button>
+      </DialogActions>
+    </Dialog>
+  );
 }
 
 export default DeleteVehicleDialog;

@@ -1,3 +1,5 @@
+import { useContext } from "react";
+
 import {
   AppBar,
   Toolbar,
@@ -14,12 +16,25 @@ import {
   MdNotifications,
   MdSearch,
   MdDarkMode,
+  MdLightMode,
 } from "react-icons/md";
 
-const drawerWidth = 260;
+import ColorModeContext from "../../context/ColorModeContext";
+
+const drawerWidth = 280;
 
 function Topbar() {
+
+  const {
+
+    mode,
+
+    toggleColorMode,
+
+  } = useContext(ColorModeContext);
+
   return (
+
     <AppBar
       position="fixed"
       color="inherit"
@@ -27,17 +42,19 @@ function Topbar() {
       sx={{
         width: `calc(100% - ${drawerWidth}px)`,
         ml: `${drawerWidth}px`,
-        backgroundColor: "#FFFFFF",
-        borderBottom: "1px solid #E5E7EB",
+        bgcolor: "background.paper",
+        borderBottom: 1,
+        borderColor: "divider",
       }}
     >
+
       <Toolbar>
 
         <Typography
           variant="h6"
           fontWeight="bold"
           sx={{
-            color: "#1565C0",
+            color: "primary.main",
             mr: 4,
           }}
         >
@@ -49,8 +66,23 @@ function Topbar() {
           placeholder="Search vehicles, drivers..."
           sx={{
             width: 320,
-            bgcolor: "#F5F7FA",
-            borderRadius: 2,
+
+            "& .MuiOutlinedInput-root": {
+              bgcolor: "action.hover",
+              borderRadius: 2,
+
+              "& fieldset": {
+                borderColor: "divider",
+              },
+
+              "&:hover fieldset": {
+                borderColor: "primary.main",
+              },
+
+              "&.Mui-focused fieldset": {
+                borderColor: "primary.main",
+              },
+            },
           }}
           InputProps={{
             startAdornment: (
@@ -63,11 +95,44 @@ function Topbar() {
 
         <Box sx={{ flexGrow: 1 }} />
 
-        <IconButton>
-          <MdDarkMode size={22} />
+        <IconButton
+          color="inherit"
+          onClick={toggleColorMode}
+          sx={{
+            color: "text.secondary",
+
+            "&:hover": {
+              bgcolor: "action.hover",
+            },
+          }}
+        >
+
+          {
+
+            mode === "light"
+
+              ?
+
+              <MdDarkMode size={22} />
+
+              :
+
+              <MdLightMode size={22} />
+
+          }
+
         </IconButton>
 
-        <IconButton>
+        <IconButton
+          color="inherit"
+          sx={{
+            color: "text.secondary",
+
+            "&:hover": {
+              bgcolor: "action.hover",
+            },
+          }}
+        >
           <Badge
             badgeContent={5}
             color="error"
@@ -86,7 +151,7 @@ function Topbar() {
         >
           <Avatar
             sx={{
-              bgcolor: "#1565C0",
+              bgcolor: "primary.main",
             }}
           >
             A
@@ -113,8 +178,11 @@ function Topbar() {
         </Box>
 
       </Toolbar>
+
     </AppBar>
+
   );
+
 }
 
 export default Topbar;

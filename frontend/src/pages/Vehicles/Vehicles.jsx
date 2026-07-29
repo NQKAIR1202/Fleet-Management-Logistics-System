@@ -263,7 +263,7 @@ function Vehicles() {
             setDeleteOpen(false);
             setDeletingVehicle(null);
 
-            await loadVehicles();
+            await loadData();
 
         } catch (err) {
 
@@ -299,7 +299,7 @@ function Vehicles() {
 
             handleFormClose();
 
-            await loadVehicles();
+            await loadData();
 
         } catch (err) {
 

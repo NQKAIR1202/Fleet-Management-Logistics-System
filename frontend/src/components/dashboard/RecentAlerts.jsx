@@ -10,14 +10,14 @@ import {
   Chip,
 } from "@mui/material";
 
-
-
 function getColor(level) {
   switch (level) {
     case "High":
       return "error";
+
     case "Medium":
       return "warning";
+
     default:
       return "success";
   }
@@ -26,89 +26,78 @@ function getColor(level) {
 function RecentAlerts({ alerts = [] }) {
   return (
     <Card
-      elevation={2}
+      elevation={0}
       sx={{
-        borderRadius: 2,
         height: "100%",
+        borderRadius: 2,
+        bgcolor: "background.paper",
+        boxShadow: 2,
+        transition: (theme) =>
+          theme.transitions.create(
+            ["transform", "box-shadow"],
+            {
+              duration: theme.transitions.duration.shorter,
+            }
+          ),
+
+        "&:hover": {
+          transform: "translateY(-3px)",
+          boxShadow: 6,
+        },
       }}
     >
       <CardContent
-sx={{
-p:4
-}}
->
-
+        sx={{
+          p: 4,
+        }}
+      >
         <Typography
           variant="h6"
           fontWeight="bold"
-          mb={2}
+          sx={{
+            mb: 2,
+            color: "text.primary",
+          }}
         >
           Recent Alerts
         </Typography>
 
         {alerts.length === 0 ? (
-
-            <Typography color="text.secondary">
-
-                No recent alerts.
-
-            </Typography>
-
+          <Typography color="text.secondary">
+            No recent alerts.
+          </Typography>
         ) : (
-
-        <Table size="small">
-
-          <TableHead>
-
-            <TableRow>
-
-              <TableCell>Vehicle</TableCell>
-
-              <TableCell>Alert</TableCell>
-
-              <TableCell>Status</TableCell>
-
-            </TableRow>
-
-          </TableHead>
-
-          <TableBody>
-
-            {alerts.map((item) => (
-
-              <TableRow key={item.vehicle}>
-
-                <TableCell>
-
-                  {item.vehicle}
-
-                </TableCell>
-
-                <TableCell>
-
-                  {item.type}
-
-                </TableCell>
-
-                <TableCell>
-
-                  <Chip
-                    label={item.severity}
-                    color={getColor(item.severity)}
-                    size="small"
-                  />
-
-                </TableCell>
-
+          <Table size="small">
+            <TableHead>
+              <TableRow>
+                <TableCell>Vehicle</TableCell>
+                <TableCell>Alert</TableCell>
+                <TableCell>Status</TableCell>
               </TableRow>
+            </TableHead>
 
-            ))}
+            <TableBody>
+              {alerts.map((item) => (
+                <TableRow
+                  key={item.vehicle}
+                  hover
+                >
+                  <TableCell>{item.vehicle}</TableCell>
 
-          </TableBody>
+                  <TableCell>{item.type}</TableCell>
 
-        </Table>
+                  <TableCell>
+                    <Chip
+                      label={item.severity}
+                      color={getColor(item.severity)}
+                      size="small"
+                    />
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
         )}
-
       </CardContent>
     </Card>
   );

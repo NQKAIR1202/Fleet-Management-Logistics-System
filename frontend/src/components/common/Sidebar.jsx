@@ -71,7 +71,9 @@ function Sidebar() {
         "& .MuiDrawer-paper": {
           width: drawerWidth,
           boxSizing: "border-box",
-          backgroundColor: "#FFFFFF",
+          bgcolor: "background.paper",
+          borderRight: 1,
+          borderColor: "divider",
         },
       }}
     >
@@ -112,23 +114,23 @@ function Sidebar() {
                 mb: 1,
                 py: 1.5,
 
-                transition: "all .25s",
+                transition: "all .25s ease",
 
                 "&:hover": {
-                  backgroundColor: "#E3F2FD",
+                  bgcolor: "action.hover",
                   transform: "translateX(4px)",
                 },
 
                 "&.Mui-selected": {
-                  backgroundColor: "#1565C0",
-                  color: "#fff",
+                  bgcolor: "primary.main",
+                  color: "primary.contrastText",
 
                   "& .MuiListItemIcon-root": {
-                    color: "#fff",
+                    color: "primary.contrastText",
                   },
 
                   "&:hover": {
-                    backgroundColor: "#1976D2",
+                    bgcolor: "primary.dark",
                   },
                 },
               }}
@@ -136,7 +138,9 @@ function Sidebar() {
               <ListItemIcon
                 sx={{
                   minWidth: 42,
-                  color: isActive ? "#fff" : "#616161",
+                  color: isActive
+                    ? "primary.contrastText"
+                    : "text.secondary",
                 }}
               >
                 {item.icon}
@@ -169,7 +173,7 @@ function Sidebar() {
           variant="caption"
           color="text.secondary"
         >
-          Version 1.0
+          Made by GROUP 04 with passion
         </Typography>
       </Box>
     </Drawer>

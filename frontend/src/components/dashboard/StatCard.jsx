@@ -15,36 +15,41 @@ function StatCard({
 }) {
   return (
     <Card
-      elevation={2}
+      elevation={0}
       sx={{
         height: "100%",
         borderRadius: 2,
-        transition: "all .25s ease",
+        bgcolor: "background.paper",
+        boxShadow: 2,
+        transition: (theme) =>
+          theme.transitions.create(
+            ["transform", "box-shadow"],
+            {
+              duration: theme.transitions.duration.shorter,
+            }
+          ),
 
         "&:hover": {
           transform: "translateY(-5px)",
-          boxShadow:"0 6px 16px rgba(0,0,0,.08)",
+          boxShadow: 6,
         },
       }}
     >
       <CardContent
-    sx={{
-        p: 3.5,
-    }}
->
-
+        sx={{
+          p: 3.5,
+        }}
+      >
         <Stack
           direction="row"
           justifyContent="space-between"
           alignItems="center"
         >
-
           <Box>
-
             <Typography
               variant="body2"
               color="text.secondary"
-              sx={{ mb: .5 }}
+              sx={{ mb: 0.5 }}
             >
               {title}
             </Typography>
@@ -59,14 +64,13 @@ function StatCard({
             <Typography
               variant="body2"
               sx={{
-                color: color,
                 mt: 1,
                 fontWeight: 600,
+                color,
               }}
             >
               {subtitle}
             </Typography>
-
           </Box>
 
           <Box
@@ -75,17 +79,23 @@ function StatCard({
               height: 72,
               borderRadius: 4,
               bgcolor: `${color}15`,
+              color,
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              color: color,
+              transition: (theme) =>
+                theme.transitions.create(
+                  ["transform", "background-color"],
+                  {
+                    duration:
+                      theme.transitions.duration.shorter,
+                  }
+                ),
             }}
           >
             {icon}
           </Box>
-
         </Stack>
-
       </CardContent>
     </Card>
   );
