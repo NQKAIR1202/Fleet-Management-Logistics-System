@@ -157,6 +157,11 @@ function SafetyToolbar({
                             </MenuItem>
 
 
+                            <MenuItem value="Critical">
+
+                                Critical
+
+                            </MenuItem>
 
                         </Select>
 
@@ -187,6 +192,7 @@ function SafetyToolbar({
                         >
 
                             <MenuItem value="All">
+
                                 All Events
                             </MenuItem>
 
@@ -272,6 +278,7 @@ function SafetyToolbar({
 
                             <MenuItem value="Closed">
                                 Closed
+
                             </MenuItem>
 
                         </Select>

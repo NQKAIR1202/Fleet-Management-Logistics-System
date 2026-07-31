@@ -12,9 +12,11 @@ import {
     Tooltip,
     Typography,
     CircularProgress,
+
 } from "@mui/material";
 
-import VisibilityIcon from "@mui/icons-material/Visibility";
+import VisibilityIcon from "@mui/icons-material/Visibility";    
+
 
 import { useMemo, useState } from "react";
 
@@ -72,6 +74,7 @@ function SeverityChip({ severity }) {
 
 function StatusChip({ status }) {
 
+
     const colors = {
         Pending: "warning",
         Open: "error",
@@ -111,6 +114,7 @@ export default function IncidentTable({
 
     const [rowsPerPage, setRowsPerPage] = useState(10);
 
+
     const visibleRows = useMemo(() => {
 
         return incidents.slice(
@@ -131,7 +135,9 @@ export default function IncidentTable({
 
             sx={{
 
+
                 borderRadius: 1,
+
 
                 overflow: "hidden",
 
@@ -139,7 +145,9 @@ export default function IncidentTable({
 
                 borderColor: "divider",
 
+
                 bgcolor: "background.paper",
+
 
             }}
 
@@ -147,9 +155,10 @@ export default function IncidentTable({
 
             <TableContainer>
 
-                <Table>
+                <Table stickyHeader>
 
                     <TableHead>
+
 
                         <TableRow
 
@@ -187,6 +196,7 @@ export default function IncidentTable({
 
                                 Severity
 
+
                             </TableCell>
 
                             <TableCell align="center">
@@ -207,11 +217,14 @@ export default function IncidentTable({
 
                     <TableBody>
 
+
                         {loading ? (
+
 
                             <TableRow>
 
                                 <TableCell
+
 
                                     colSpan={8}
 
@@ -258,7 +271,8 @@ export default function IncidentTable({
                             </TableRow>
 
                         ) : (
-                                                        visibleRows.map((incident, index) => (
+
+                            visibleRows.map((incident, index) => (                             
 
                                 <TableRow
 
@@ -411,13 +425,16 @@ export default function IncidentTable({
 
                             ))
 
+
                         )}
 
                     </TableBody>
 
+
                 </Table>
 
             </TableContainer>
+
 
             <TablePagination
 
@@ -478,6 +495,7 @@ export default function IncidentTable({
                 }}
 
             />
+
 
         </Paper>
 

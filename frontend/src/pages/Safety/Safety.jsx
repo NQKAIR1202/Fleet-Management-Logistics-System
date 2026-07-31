@@ -1,3 +1,4 @@
+
 import { useEffect, useMemo, useState } from "react";
 import { Stack, Box, Typography } from "@mui/material";
 
@@ -311,6 +312,7 @@ function Safety() {
 
     // ==========================================================
 
+
     return (
 
         <Stack spacing={4}>
@@ -340,6 +342,7 @@ function Safety() {
                 >
 
                     Manage fleet safety events and investigations.
+
 
                 </Typography>
 
