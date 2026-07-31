@@ -81,13 +81,13 @@ EVENT_TYPES = [
 
 SEVERITIES = [
 
-    (1, "Low", 5, False),
+    (1, "Low", 5, 0),
 
-    (2, "Medium", 10, False),
+    (2, "Medium", 10, 0),
 
-    (3, "High", 20, True),
+    (3, "High", 20, 1),
 
-    (4, "Critical", 40, True)
+    (4, "Critical", 40, 1)
 
 ]
 
@@ -393,8 +393,9 @@ DEPOT_PLATES = {
 # =========================================================
 
 DRIVER_STATUS = {
-    "Active": 85,
+    "Active": 80,
     "Inactive": 10,
+    "On Leave": 5,
     "Suspended": 5
 }
 

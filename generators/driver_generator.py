@@ -40,8 +40,16 @@ STATUS_WEIGHTS = list(DRIVER_STATUS.values())
 # =========================================================
 
 def generate_driver_name():
+    
+    gender = random.choices(
 
-    gender = random.choice(["M", "F"])
+        ["M", "F"],
+
+        weights=[97, 3],
+
+        k=1
+
+    )[0]
 
     return vietnamese_name(gender)
 
@@ -74,7 +82,7 @@ def choose_license_type():
 
         DRIVER_LICENSE_CLASSES,
 
-        [45, 35, 20]
+        [25,45,30]
 
     )
 
@@ -107,7 +115,7 @@ def generate(total=TOTAL_DRIVERS):
 
     licence_counter = {}
 
-    for _ in range(total):
+    for driver_id in range(1, total + 1):
 
         name = generate_driver_name()
 
@@ -135,6 +143,8 @@ def generate(total=TOTAL_DRIVERS):
 
         rows.append([
 
+            driver_id,
+
             name,
 
             contact,
@@ -156,6 +166,8 @@ def generate(total=TOTAL_DRIVERS):
         rows,
 
         columns=[
+
+            "DriverID",
 
             "FullName",
 

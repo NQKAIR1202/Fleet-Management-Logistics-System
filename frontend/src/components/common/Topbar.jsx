@@ -61,37 +61,7 @@ function Topbar() {
           Fleet Management System
         </Typography>
 
-        <TextField
-          size="small"
-          placeholder="Search vehicles, drivers..."
-          sx={{
-            width: 320,
-
-            "& .MuiOutlinedInput-root": {
-              bgcolor: "action.hover",
-              borderRadius: 2,
-
-              "& fieldset": {
-                borderColor: "divider",
-              },
-
-              "&:hover fieldset": {
-                borderColor: "primary.main",
-              },
-
-              "&.Mui-focused fieldset": {
-                borderColor: "primary.main",
-              },
-            },
-          }}
-          InputProps={{
-            startAdornment: (
-              <InputAdornment position="start">
-                <MdSearch />
-              </InputAdornment>
-            ),
-          }}
-        />
+        
 
         <Box sx={{ flexGrow: 1 }} />
 

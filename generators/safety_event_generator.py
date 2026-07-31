@@ -57,13 +57,11 @@ EVENT_SEVERITY = {
 
     "Fatigue Warning": "High",
 
-    "Seat Belt Violation": "Low",
+    "Engine Warning": "High",
 
-    "Mobile Phone Usage": "Medium",
+    "Seatbelt Violation": "Low",
 
-    "Near Miss": "High",
-
-    "Collision": "Critical"
+    "Phone Distraction": "Medium",
 
 }
 
@@ -83,13 +81,11 @@ EVENT_POOL = [
 
     ("Fatigue Warning",10),
 
-    ("Seat Belt Violation",6),
+    ("Engine Warning",6),
 
-    ("Mobile Phone Usage",6),
+    ("Seatbelt Violation",6),
 
-    ("Near Miss",4),
-
-    ("Collision",1)
+    ("Phone Distraction",5),
 
 ]
 
@@ -310,8 +306,12 @@ def generate():
 
             # Nếu Event không tồn tại trong CSV thì bỏ qua
             if event_name not in EVENT_ID:
-                continue
+    
+                raise ValueError(
 
+                    f"Unknown Event Type: {event_name}"
+
+                )
             events.append(
 
                 create_event(

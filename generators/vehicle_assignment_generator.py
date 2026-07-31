@@ -374,6 +374,8 @@ def generate():
     assignments = []
 
     assignment_id = 1
+    
+    used_start_dates = set()
 
     for vehicle in vehicles.itertuples(index=False):
 
@@ -395,6 +397,11 @@ def generate():
             driver_id = driver_info["DriverID"]
 
             start_date, end_date = completed_period()
+
+            while (vehicle.VIN, start_date) in used_start_dates:
+                start_date = start_date + timedelta(days=1)
+
+            used_start_dates.add((vehicle.VIN, start_date))
 
             assignments.append(
 
@@ -450,6 +457,11 @@ def generate():
         else:
 
             start_date, end_date = completed_period()
+            
+        while (vehicle.VIN, start_date) in used_start_dates:
+            start_date = start_date + timedelta(days=1)
+
+        used_start_dates.add((vehicle.VIN, start_date))
 
         assignments.append(
 

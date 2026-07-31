@@ -30,6 +30,7 @@ class DriverEmploymentstatus(str, enum.Enum):
     ACTIVE = "Active"
     INACTIVE = "Inactive"
     SUSPENDED = "Suspended"
+    ONLEAVE = "On Leave"
 
 
 class DrivercertificationStatus(str, enum.Enum):
