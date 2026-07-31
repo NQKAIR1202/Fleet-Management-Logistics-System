@@ -2,28 +2,23 @@ from pathlib import Path
 from subprocess import run
 from urllib.parse import quote_plus
 import os
+import sys
 import time
 
-# ===========================
-# Database Configuration
-# ===========================
-
-DB_USER = "root"
-DB_PASSWORD = "Luanhah0811@"
-DB_HOST = "127.0.0.1"
-DB_PORT = "3306"
-DB_NAME = "fleetmanagementdb"
+from app.core.config import settings
 
 # ===========================
 # Build SQLAlchemy URL
 # ===========================
+# Pulled from the same .env / Settings your app already uses (app/core/config.py),
+# so this always targets the same database as connection.py.
 
 DATABASE_URL = (
     f"mysql+pymysql://"
-    f"{DB_USER}:"
-    f"{quote_plus(DB_PASSWORD)}@"
-    f"{DB_HOST}:{DB_PORT}/"
-    f"{DB_NAME}"
+    f"{settings.DB_USER}:"
+    f"{quote_plus(settings.DB_PASSWORD)}@"
+    f"{settings.DB_HOST}:{settings.DB_PORT}/"
+    f"{settings.DB_NAME}"
 )
 
 OUTPUT_FILE = Path("app/models/generated.py")
@@ -40,9 +35,8 @@ def main():
     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
 
     command = [
-        "python",
-        "-m",
-        "sqlacodegen",
+        sys.executable,
+        str(Path(__file__).parent / "_sqlacodegen_runner.py"),
         DATABASE_URL,
         "--generator",
         "declarative",
@@ -59,7 +53,7 @@ def main():
     print("✅ Models generated.")
 
     # Optional: format bằng black nếu có
-    os.system(f'python -m black "{OUTPUT_FILE}"')
+    os.system(f'"{sys.executable}" -m black "{OUTPUT_FILE}"')
 
     elapsed = time.time() - start
 

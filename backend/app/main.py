@@ -6,6 +6,7 @@ from app.api.vehicle import router as vehicle_router
 from app.api.dashboard import router as dashboard_router
 from app.api import depot
 from app.api import vehicle_category
+from app.api.auth import router as auth_router
 
 
 
@@ -37,6 +38,8 @@ app.include_router(vehicle_router)
 app.include_router(depot.router)
 
 app.include_router(vehicle_category.router)
+
+app.include_router(auth_router)
 
 
 @app.get("/")

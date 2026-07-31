@@ -1,9 +1,10 @@
-faker
-pandas
-numpy
-openpyxl
-mysql-connector-python
-pandas
+fastapi
+uvicorn[standard]
 sqlalchemy
 pymysql
 python-dotenv
+pydantic-settings
+bcrypt
+email-validator
+sqlacodegen
+black
