@@ -17,7 +17,6 @@ import {
     DialogActions,
     Menu,
     MenuItem,
-    Divider,
     CircularProgress,
     Snackbar,
     Alert,
@@ -29,14 +28,12 @@ import {
     MdDarkMode,
     MdLightMode,
     MdLogout,
-    MdPerson,
-    MdSettings,
     MdVisibility,
     MdVisibilityOff,
 } from "react-icons/md";
 
 import ColorModeContext from "../../context/ColorModeContext";
-import { login, register } from "../../services/authService";
+import { login } from "../../services/authService";
 import { useAuth } from "../../context/AuthContext";
 
 
@@ -181,71 +178,51 @@ function Topbar() {
 
     }
 
-      const handleAuthSubmit = async () => {setLoading(true);
+      const handleAuthSubmit = async () => {
 
-          try {
+    setLoading(true);
 
-              if (authView === "login") {
+    try {
 
-                  const result = await login({
+        const result = await login({
 
-                      email: authForm.email,
+            email: authForm.email,
 
-                      password: authForm.password,
+            password: authForm.password,
 
-                  });
+        });
 
-                  authLogin(
-                      result.user,
-                      result.access_token
-                  );
+        authLogin(
 
-              }
+            result.user,
 
-              else {
+            result.access_token,
 
-                  await register({
+        );
 
-                      full_name: authForm.name,
+        closeDialog();
 
-                      email: authForm.email,
+    }
 
-                      password: authForm.password,
+    catch(err){
 
-                      role: "Viewer",
+        showSnackbar(
 
-                  });
+            err.message,
 
-                  showSnackbar(
-                      "Account created successfully.",
-                      "success"
-                  );
+            "error"
 
-                  setAuthView("login");
+        );
 
-                  return;
+    }
 
-              }
+    finally{
 
-              closeDialog();
+        setLoading(false);
 
-          }
+    }
 
-          catch (err) {
-
-              showSnackbar(
-                  err.message,
-                  "error"
-              );
-
-          }
-          finally {
-
-              setLoading(false);
-
-          }
-
-      };
+};
 
 
     const handleLogout = () => {
@@ -468,27 +445,7 @@ function Topbar() {
 
                                 </Button>
 
-                                <Button
-                                    variant="contained"
-                                    onClick={openSignup}
-                                    sx={{
-                                        textTransform: "none",
-                                        borderRadius: 2,
-                                        px: 3,
-                                        boxShadow: "none",
-
-                                        "&:hover": {
-
-                                            boxShadow: "none",
-
-                                        },
-
-                                    }}
-                                >
-
-                                    Sign up
-
-                                </Button>
+                    
 
                             </Box>
 
@@ -512,45 +469,19 @@ function Topbar() {
                 }}
             >
 
-                <MenuItem>
-
-                    <MdPerson
-                        style={{
-                            marginRight: 12,
-                        }}
-                    />
-
-                    Profile
-
-                </MenuItem>
-
-                <MenuItem>
-
-                    <MdSettings
-                        style={{
-                            marginRight: 12,
-                        }}
-                    />
-
-                    Settings
-
-                </MenuItem>
-
-                <Divider />
-
                 <MenuItem
-                    onClick={handleLogout}
-                >
+        onClick={handleLogout}
+    >
 
-                    <MdLogout
-                        style={{
-                            marginRight: 12,
-                        }}
-                    />
+        <MdLogout
+            style={{
+                marginRight:12,
+            }}
+        />
 
-                    Logout
+        Logout
 
-                </MenuItem>
+    </MenuItem>
 
             </Menu>
             <Dialog
@@ -710,25 +641,27 @@ function Topbar() {
 
                                     Don't have an account?
 
-                                    {" "}
+                                        <Box
+                                            component="span"
+                                            sx={{
+                                                color: "primary.main",
+                                                fontWeight: 700,
+                                            }}
+                                        >
+                                            Please contact the administrator.
+                                        </Box>
 
-                                    <Box
-                                        component="span"
-                                        onClick={openSignup}
-                                        sx={{
-                                            color: "primary.main",
-                                            fontWeight: 700,
-                                            cursor: "pointer",
-
-                                            "&:hover": {
-                                                textDecoration: "underline",
-                                            },
-                                        }}
-                                    >
-
-                                        Sign up
-
-                                    </Box>
+                                        <Typography
+                                            variant="body2"
+                                            sx={{
+                                                mt: 1,
+                                                color: "text.secondary",
+                                            }}
+                                        >
+                                            📧 nqkair1202@gmail.com
+                                            <br />
+                                            📞 0908501202
+                                        </Typography>
 
                                 </>
 
