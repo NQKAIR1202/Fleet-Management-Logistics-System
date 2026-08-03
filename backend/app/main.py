@@ -23,14 +23,14 @@ app = FastAPI(
 
 app.include_router(dashboard_router)
 
-# origins = [
-#     "http://localhost:5173",
-# ]
+origins = [
+    "https://fleet-management-logistics-system.vercel.app",
+]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=False,
+    allow_origins=origins,
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
