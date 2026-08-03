@@ -49,44 +49,38 @@ def register(
 
     return user
 
-@router.post(
-    "/login",
-    response_model=LoginResponse,
-)
-def login(
-    request: LoginRequest,
-    db: Session = Depends(get_db),
-):
+@router.post("/login", response_model=LoginResponse)
+def login(request: LoginRequest, db: Session = Depends(get_db)):
+    import traceback
 
-    user = authenticate_user(
-        db,
-        request.email,
-        request.password,
-    )
-
-    if user is None:
-
-        raise HTTPException(
-            status_code=401,
-            detail="Invalid email or password.",
+    try:
+        user = authenticate_user(
+            db,
+            request.email,
+            request.password,
         )
 
-    update_last_login(
-        db,
-        user,
-    )
+        if user is None:
+            raise HTTPException(
+                status_code=401,
+                detail="Invalid email or password."
+            )
 
-    token = create_user_token(user)
+        update_last_login(db, user)
 
-    return {
+        token = create_user_token(user)
 
-        "access_token": token,
+        return {
+            "access_token": token,
+            "token_type": "bearer",
+            "user": user,
+        }
 
-        "token_type": "bearer",
-
-        "user": user,
-
-    }
+    except Exception as e:
+        print("=" * 80)
+        traceback.print_exc()
+        print("=" * 80)
+        raise
     
 @router.get("/me")
 def me():
