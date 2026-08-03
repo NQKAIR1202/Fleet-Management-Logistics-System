@@ -8,6 +8,18 @@
       Typography,
   } from "@mui/material";
 
+  import { useAuth } from "../../context/AuthContext";
+
+import {
+
+    canCreate,
+
+    canEdit,
+
+    canDelete,
+
+} from "../../utils/permissions";
+
 import DriverToolbar from "../../components/driver/DriverToolbar";
 import DriverTable from "../../components/driver/DriverTable";
 import DriverStatistics from "../../components/driver/DriverStatistics";
@@ -16,7 +28,7 @@ import ViewDriverDialog from "../../components/driver/ViewDriverDialog";
 import EditDriverDialog from "../../components/driver/EditDriverDialog";
 import DeleteDriverDialog from "../../components/driver/DeleteDriverDialog";
 
-  import { getDrivers, deleteDriver, } from "../../services/driverService";
+import { getDrivers, deleteDriver, } from "../../services/driverService";
 
   function Driver() {
 
@@ -44,6 +56,8 @@ import DeleteDriverDialog from "../../components/driver/DeleteDriverDialog";
       const [deleteLoading, setDeleteLoading] = useState(false);
 
       const [selectedDriver, setSelectedDriver] = useState(null);
+
+      const { user } = useAuth();
 
 
       useEffect(() => {
@@ -256,6 +270,8 @@ import DeleteDriverDialog from "../../components/driver/DeleteDriverDialog";
                       depots={depots}
 
                       onAddClick={() => setOpenAdd(true)}
+                      
+                      canCreate={canCreate(user)}
 
                   />
 
@@ -307,6 +323,10 @@ import DeleteDriverDialog from "../../components/driver/DeleteDriverDialog";
                         setOpenDelete(true);
 
                     }}
+
+                    canEdit={canEdit(user)}
+
+                    canDelete={canDelete(user)}   
                 />
 
               </Paper>

@@ -21,6 +21,17 @@ import {
     getDepots,
     getVehicleCategories,
 } from "../../services/vehicleService";
+import { useAuth } from "../../context/AuthContext";
+
+import {
+
+    canCreate,
+
+    canEdit,
+
+    canDelete,
+
+} from "../../utils/permissions";
 
 function Vehicles() {
 
@@ -30,7 +41,7 @@ function Vehicles() {
     const [statusFilter, setStatusFilter] = useState("All");
     const [depotFilter, setDepotFilter] = useState("All");
 
-    const [categoryFilter, setCategoryFilter] = useState("All");
+    const [categoryFilter, setCategoryFilter] = useState("All");    
 
     const [manufacturerFilter, setManufacturerFilter] = useState("All");
 
@@ -50,6 +61,7 @@ function Vehicles() {
 
     const [deleteOpen, setDeleteOpen] = useState(false);
     const [deletingVehicle, setDeletingVehicle] = useState(null);
+    const { user } = useAuth();
 
     useEffect(() => {
 
@@ -386,13 +398,24 @@ function Vehicles() {
                 onReset={handleResetFilters}
 
                 onAdd={handleAdd}
+
+                canCreate={canCreate(user)}
             />
 
             <VehicleTable
+
                 vehicles={filteredVehicles}
+
                 onView={handleView}
+
                 onEdit={handleEdit}
+
                 onDelete={handleDelete}
+
+                canEdit={canEdit(user)}
+
+                canDelete={canDelete(user)}
+
             />
 
             <VehicleDetailsDialog

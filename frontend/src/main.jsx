@@ -12,6 +12,7 @@ import {
 } from "./theme/theme";
 
 import ColorModeContext from "./context/ColorModeContext";
+import { AuthProvider } from "./context/AuthContext";
 
 function Main() {
   const [mode, setMode] = useState(() => {
@@ -48,12 +49,20 @@ function Main() {
 
   return (
     <ColorModeContext.Provider value={colorMode}>
-      <ThemeProvider theme={theme}>
+
+    <ThemeProvider theme={theme}>
+
         <CssBaseline />
 
-        <App />
-      </ThemeProvider>
-    </ColorModeContext.Provider>
+        <AuthProvider>
+
+            <App />
+
+        </AuthProvider>
+
+    </ThemeProvider>
+
+</ColorModeContext.Provider>
   );
 }
 

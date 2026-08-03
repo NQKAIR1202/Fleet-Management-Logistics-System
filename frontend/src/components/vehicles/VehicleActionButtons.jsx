@@ -11,6 +11,11 @@ function VehicleActionButtons({
   onView,
   onEdit,
   onDelete,
+
+  canEdit,
+
+  canDelete,
+
 }) {
   return (
     <Stack
@@ -33,35 +38,55 @@ function VehicleActionButtons({
         </IconButton>
       </Tooltip>
 
-      <Tooltip title="Edit">
-        <IconButton
-          color="warning"
-          onClick={() => onEdit(vehicle)}
-          size="small"
-          sx={{
-            "&:hover": {
-              bgcolor: "action.hover",
-            },
-          }}
-        >
-          <EditIcon fontSize="small" />
-        </IconButton>
-      </Tooltip>
+      {
+    canEdit && (
 
-      <Tooltip title="Delete">
-        <IconButton
-          color="error"
-          onClick={() => onDelete(vehicle)}
-          size="small"
-          sx={{
-            "&:hover": {
-              bgcolor: "action.hover",
-            },
-          }}
-        >
-          <DeleteIcon fontSize="small" />
-        </IconButton>
-      </Tooltip>
+        <Tooltip title="Edit">
+
+            <IconButton
+                color="warning"
+                onClick={() => onEdit(vehicle)}
+                size="small"
+                sx={{
+                    "&:hover": {
+                        bgcolor: "action.hover",
+                    },
+                }}
+            >
+
+                <EditIcon fontSize="small" />
+
+            </IconButton>
+
+        </Tooltip>
+
+    )
+}
+
+      {
+    canDelete && (
+
+        <Tooltip title="Delete">
+
+            <IconButton
+                color="error"
+                onClick={() => onDelete(vehicle)}
+                size="small"
+                sx={{
+                    "&:hover": {
+                        bgcolor: "action.hover",
+                    },
+                }}
+            >
+
+                <DeleteIcon fontSize="small" />
+
+            </IconButton>
+
+        </Tooltip>
+
+    )
+}
     </Stack>
   );
 }

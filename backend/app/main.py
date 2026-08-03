@@ -8,7 +8,9 @@ from app.api import depot
 from app.api import vehicle_category
 from app.api import safety
 from app.api import driver
-
+from app.api import auth
+from app.api import maintenance
+from app.api import reports
 
 
 
@@ -44,6 +46,12 @@ app.include_router(vehicle_category.router)
 
 app.include_router(safety.router)
 
+app.include_router(auth.router)
+
+app.include_router(
+    maintenance.router
+)
+app.include_router(reports.router)
 
 @app.get("/")
 def root():

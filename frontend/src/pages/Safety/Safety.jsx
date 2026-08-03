@@ -7,8 +7,30 @@ import IncidentTable from "../../components/safety/IncidentTable";
 import TrendChart from "../../components/safety/TrendChart";
 import SeverityChart from "../../components/safety/SeverityChart";
 import IncidentDialog from "../../components/safety/IncidentDialog";
+import IncidentFormDialog
+from "../../components/safety/IncidentFormDialog";
 
-import { getSafetyEvents } from "../../services/safetyService";
+import DeleteIncidentDialog
+from "../../components/safety/DeleteIncidentDialog";
+
+import {
+
+    getSafetyEvents,
+
+    createSafetyEvent,
+
+    updateSafetyEvent,
+
+    deleteSafetyEvent,
+
+} from "../../services/safetyService";
+
+import { useAuth } from "../../context/AuthContext";
+
+import {
+    canEdit,
+    canDelete,
+} from "../../utils/permissions";
 
 function Safety() {
 
@@ -24,6 +46,16 @@ function Safety() {
 
     const [dialogOpen, setDialogOpen] = useState(false);
 
+    const [formOpen, setFormOpen] = useState(false);
+
+    const [mode, setMode] = useState("add");
+
+    const [editingIncident, setEditingIncident] = useState(null);
+
+    const [deleteOpen, setDeleteOpen] = useState(false);
+
+    const [deletingIncident, setDeletingIncident] = useState(null);
+
     // ==========================================================
     // FILTERS
     // ==========================================================
@@ -35,6 +67,8 @@ function Safety() {
     const [eventTypeFilter, setEventTypeFilter] = useState("All");
 
     const [statusFilter, setStatusFilter] = useState("All");
+
+    const { user } = useAuth();
 
     // ==========================================================
     // LOAD DATA
@@ -234,6 +268,97 @@ function Safety() {
 
     }
 
+    function handleEdit(incident) {
+
+    console.log("EDIT CLICK", incident);
+
+    setMode("edit");
+    setEditingIncident(incident);
+    setFormOpen(true);
+
+}
+
+    function handleDelete(incident) {
+
+    console.log("DELETE CLICK", incident);
+
+    setDeletingIncident(incident);
+    setDeleteOpen(true);
+
+}
+
+async function handleSave(data) {
+
+    try {
+
+        if (mode === "add") {
+
+            await createSafetyEvent({
+
+                status: data.status,
+
+            });
+
+        }
+
+        else {
+
+            await updateSafetyEvent(
+
+                editingIncident.incidentID,
+
+                {
+
+                    status: data.status,
+
+                }
+
+            );
+
+        }
+
+        setFormOpen(false);
+
+        setEditingIncident(null);
+
+        await loadData();
+
+    }
+
+    catch (err) {
+
+        console.error(err);
+
+    }
+
+}
+
+async function confirmDelete() {
+
+    try {
+
+        await deleteSafetyEvent(
+
+            deletingIncident.incidentID
+
+        );
+
+        setDeleteOpen(false);
+
+        setDeletingIncident(null);
+
+        await loadData();
+
+    }
+
+    catch (err) {
+
+        console.error(err);
+
+    }
+
+}
+
     function handleReset() {
 
         setSearch("");
@@ -373,13 +498,17 @@ function Safety() {
             />
 
             <IncidentTable
-
                 incidents={filteredIncidents}
-
                 onView={handleView}
 
-                loading={loading}
+                onEdit={handleEdit}
 
+                onDelete={handleDelete}
+
+                canEdit={canEdit(user)}
+                canDelete={canDelete(user)}
+
+                loading={loading}
             />
 
             <Stack
@@ -417,6 +546,44 @@ function Safety() {
                 incident={selectedIncident}
 
                 onClose={() => setDialogOpen(false)}
+
+            />
+
+            <IncidentFormDialog
+
+                open={formOpen}
+
+                mode={mode}
+
+                incident={editingIncident}
+
+                onClose={() => {
+
+                    setFormOpen(false);
+
+                    setEditingIncident(null);
+
+                }}
+
+                onSubmit={handleSave}
+
+            />
+
+            <DeleteIncidentDialog
+
+                open={deleteOpen}
+
+                incident={deletingIncident}
+
+                onClose={() => {
+
+                    setDeleteOpen(false);
+
+                    setDeletingIncident(null);
+
+                }}
+
+                onConfirm={confirmDelete}
 
             />
 

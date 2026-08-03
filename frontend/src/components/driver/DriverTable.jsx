@@ -54,7 +54,21 @@ const getStatusColor = (status) => {
 
 };
 
-const DriverTable = ({ drivers, onView, onEdit, onDelete, }) => {
+const DriverTable = ({
+
+    drivers,
+
+    onView,
+
+    onEdit,
+
+    onDelete,
+
+    canEdit,
+
+    canDelete,
+
+}) => {
 
     const [page, setPage] = useState(0);
 
@@ -267,30 +281,42 @@ const DriverTable = ({ drivers, onView, onEdit, onDelete, }) => {
 
                                         </Tooltip>
 
-                                        <Tooltip title="Edit">
+                                        {
+                                            canEdit && (
 
-                                            <IconButton
-                                                onClick={() => onEdit(driver.DriverID)}
-                                            >
+                                                <Tooltip title="Edit">
 
-                                                <EditIcon />
+                                                    <IconButton
+                                                        onClick={() => onEdit(driver.DriverID)}
+                                                    >
 
-                                            </IconButton>
+                                                        <EditIcon />
 
-                                        </Tooltip>
+                                                    </IconButton>
 
-                                        <Tooltip title="Delete">
+                                                </Tooltip>
 
-                                            <IconButton
-                                                color="error"
-                                                onClick={() => onDelete(driver)}
-                                            >
+                                            )
+                                        }
 
-                                                <DeleteIcon />
+                                        {
+                                            canDelete && (
 
-                                            </IconButton>
+                                                <Tooltip title="Delete">
 
-                                        </Tooltip>
+                                                    <IconButton
+                                                        color="error"
+                                                        onClick={() => onDelete(driver)}
+                                                    >
+
+                                                        <DeleteIcon />
+
+                                                    </IconButton>
+
+                                                </Tooltip>
+
+                                            )
+                                        }
 
                                     </TableCell>
 

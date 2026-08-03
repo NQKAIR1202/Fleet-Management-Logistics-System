@@ -1,39 +1,62 @@
-import axios from "axios";
+import api from "../api/api";
 
-// ==========================================================
-// API
-// ==========================================================
+// ===========================
+// Safety Events
+// ===========================
 
-const API = axios.create({
+export const getSafetyEvents = async () => {
 
-    baseURL: "http://127.0.0.1:8000",
-
-    headers: {
-
-        "Content-Type": "application/json",
-
-    },
-
-});
-
-// ==========================================================
-// SAFETY EVENTS
-// ==========================================================
-
-export async function getSafetyEvents() {
-
-    const response = await API.get("/safety-events");
+    const response = await api.get(
+        "/safety-events"
+    );
 
     return response.data;
 
-}
+};
 
-// ==========================================================
-// EXPORT
-// ==========================================================
+export const createSafetyEvent = async (event) => {
 
-export default {
+    const response = await api.post(
+        "/safety-events",
+        event
+    );
 
-    getSafetyEvents,
+    return response.data;
+
+};
+
+export const updateSafetyEvent = async (
+
+    id,
+
+    event,
+
+) => {
+
+    const response = await api.put(
+
+        `/safety-events/${id}`,
+
+        event,
+
+    );
+
+    return response.data;
+
+};
+
+export const deleteSafetyEvent = async (
+
+    id,
+
+) => {
+
+    const response = await api.delete(
+
+        `/safety-events/${id}`
+
+    );
+
+    return response.data;
 
 };

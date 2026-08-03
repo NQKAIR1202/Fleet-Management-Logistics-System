@@ -23,6 +23,9 @@ const DriverToolbar = ({
     setLicence,
     depots,
     onAddClick,
+
+    canCreate,
+
 }) => {
 
     const handleReset = () => {
@@ -127,19 +130,25 @@ const DriverToolbar = ({
                     Reset
                 </Button>
 
-                <Button
-                    variant="contained"
-                    startIcon={<AddIcon />}
-                    onClick={onAddClick}
-                    sx={{
-                        height: 56,
-                        minWidth: 160,
-                        borderRadius: 3,
-                        flexShrink: 0,
-                    }}
-                >
-                    Add Driver
-                </Button>
+                {
+                    canCreate && (
+
+                        <Button
+                            variant="contained"
+                            startIcon={<AddIcon />}
+                            onClick={onAddClick}
+                            sx={{
+                                height: 56,
+                                minWidth: 160,
+                                borderRadius: 3,
+                                flexShrink: 0,
+                            }}
+                        >
+                            Add Driver
+                        </Button>
+
+                    )
+                }
 
             </Stack>
 

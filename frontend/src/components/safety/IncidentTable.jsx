@@ -15,7 +15,9 @@ import {
 
 } from "@mui/material";
 
-import VisibilityIcon from "@mui/icons-material/Visibility";    
+import VisibilityIcon from "@mui/icons-material/Visibility";
+import EditIcon from "@mui/icons-material/Edit";
+import DeleteIcon from "@mui/icons-material/Delete";
 
 
 import { useMemo, useState } from "react";
@@ -107,6 +109,14 @@ export default function IncidentTable({
     loading = false,
 
     onView,
+
+    onEdit,
+
+    onDelete,
+
+    canEdit,
+
+    canDelete,
 
 }) {
 
@@ -385,32 +395,13 @@ export default function IncidentTable({
 
                                     </TableCell>
 
-                                    <TableCell
+                                    <TableCell align="center">
 
-                                        align="center"
-
-                                    >
-
-                                        <Tooltip
-
-                                            title="View Details"
-
-                                        >
+                                        <Tooltip title="View Details">
 
                                             <IconButton
-
                                                 color="primary"
-
-                                                onClick={() =>
-
-                                                    onView?.(
-
-                                                        incident
-
-                                                    )
-
-                                                }
-
+                                                onClick={() => onView?.(incident)}
                                             >
 
                                                 <VisibilityIcon />
@@ -418,6 +409,40 @@ export default function IncidentTable({
                                             </IconButton>
 
                                         </Tooltip>
+
+                                        {canEdit && (
+
+                                            <Tooltip title="Edit">
+
+                                                <IconButton
+                                                    color="warning"
+                                                    onClick={() => onEdit?.(incident)}
+                                                >
+
+                                                    <EditIcon />
+
+                                                </IconButton>
+
+                                            </Tooltip>
+
+                                        )}
+
+                                        {canDelete && (
+
+                                            <Tooltip title="Delete">
+
+                                                <IconButton
+                                                    color="error"
+                                                    onClick={() => onDelete?.(incident)}
+                                                >
+
+                                                    <DeleteIcon />
+
+                                                </IconButton>
+
+                                            </Tooltip>
+
+                                        )}
 
                                     </TableCell>
 

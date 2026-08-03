@@ -72,20 +72,20 @@ TABLES = [
     #"vehicle",
     #"driver",
     #"drivercertification",
-    "vehicleassignment",
+    #"vehicleassignment",
 
     # Package 4
 
     #"safetyevent",
     #"safetyreview",
-    "driversafetyscore",
+    #"driversafetyscore",
     #"drivercoaching",
 
     # Package 5
 
     #"part",
     #"predictivealert",
-    #"maintenancejob",
+    "maintenancejob",
     #"maintenanceactivity",
     #"mechanic",
     #"mechaniccertification",

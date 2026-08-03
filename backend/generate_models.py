@@ -3,16 +3,19 @@ from subprocess import run
 from urllib.parse import quote_plus
 import os
 import time
+from dotenv import load_dotenv
+
+load_dotenv()   
 
 # ===========================
 # Database Configuration
 # ===========================
 
-DB_USER = "root"
-DB_PASSWORD = "Luanhah0811@"
-DB_HOST = "127.0.0.1"
-DB_PORT = "3306"
-DB_NAME = "fleetmanagementdb"
+DB_USER = os.getenv("DB_USER")
+DB_PASSWORD = os.getenv("DB_PASSWORD")
+DB_HOST = os.getenv("DB_HOST")
+DB_PORT = os.getenv("DB_PORT")
+DB_NAME = os.getenv("DB_NAME")  
 
 # ===========================
 # Build SQLAlchemy URL

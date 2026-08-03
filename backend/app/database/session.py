@@ -1,6 +1,11 @@
 from sqlalchemy.orm import sessionmaker
 
+
 from app.database.connection import engine
+from sqlalchemy.orm import DeclarativeBase
+
+class Base(DeclarativeBase):
+    pass
 
 SessionLocal = sessionmaker(
     bind=engine,

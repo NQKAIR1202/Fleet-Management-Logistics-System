@@ -13,28 +13,32 @@ import AddIcon from "@mui/icons-material/Add";
 import RestartAltIcon from "@mui/icons-material/RestartAlt";
 
 function VehicleToolbar({
-  search,
-  setSearch,
 
-  statusFilter,
-  setStatusFilter,
+    search,
+    setSearch,
 
-  depotFilter,
-  setDepotFilter,
+    statusFilter,
+    setStatusFilter,
 
-  categoryFilter,
-  setCategoryFilter,
+    depotFilter,
+    setDepotFilter,
 
-  manufacturerFilter,
-  setManufacturerFilter,
+    categoryFilter,
+    setCategoryFilter,
 
-  depots,
-  categories,
-  manufacturers,
+    manufacturerFilter,
+    setManufacturerFilter,
 
-  onReset,
+    depots,
+    categories,
+    manufacturers,
 
-  onAdd,
+    onReset,
+
+    onAdd,
+
+    canCreate,
+
 }) {
   return (
     <Stack spacing={3}>
@@ -183,20 +187,26 @@ function VehicleToolbar({
             Reset
           </Button>
 
-          <Button
+{
+    canCreate && (
+
+        <Button
             variant="contained"
             startIcon={<AddIcon />}
             onClick={onAdd}
             sx={{
-              px: 3,
-              py: 1.2,
-              borderRadius: 2,
-              textTransform: "none",
-              fontWeight: 600,
+                px: 3,
+                py: 1.2,
+                borderRadius: 2,
+                textTransform: "none",
+                fontWeight: 600,
             }}
-          >
+        >
             Add Vehicle
-          </Button>
+        </Button>
+
+    )
+}
         </Box>
       </Box>
     </Stack>

@@ -13,10 +13,12 @@ import VehicleStatusChip from "./VehicleStatusChip";
 import VehicleActionButtons from "./VehicleActionButtons";
 
 function VehicleTable({
-  vehicles,
-  onView,
-  onEdit,
-  onDelete,
+    vehicles,
+    onView,
+    onEdit,
+    onDelete,
+    canEdit,
+    canDelete,
 }) {
   return (
     <TableContainer
@@ -102,11 +104,20 @@ function VehicleTable({
 
                 <TableCell align="center">
                   <VehicleActionButtons
-                    vehicle={vehicle}
-                    onView={onView}
-                    onEdit={onEdit}
-                    onDelete={onDelete}
-                  />
+
+                  vehicle={vehicle}
+
+                  onView={onView}
+
+                  onEdit={onEdit}
+
+                  onDelete={onDelete}
+
+                  canEdit={canEdit}
+
+                  canDelete={canDelete}
+
+              />
                 </TableCell>
               </TableRow>
             ))
