@@ -1,21 +1,19 @@
-from urllib.parse import quote_plus
-
 from sqlalchemy import create_engine
 
 from app.core.config import settings
 
 DATABASE_URL = (
-    f"mysql+pymysql://{settings.DB_USER}:"
-    f"{quote_plus(settings.DB_PASSWORD)}@"
-    f"{settings.DB_HOST}:"
-    f"{settings.DB_PORT}/"
-    f"{settings.DB_NAME}"
+    f"mysql+pymysql://"
+    f"{settings.DB_USER}:{settings.DB_PASSWORD}"
+    f"@{settings.DB_HOST}:{settings.DB_PORT}"
+    f"/{settings.DB_NAME}"
 )
-
-print(DATABASE_URL)
 
 engine = create_engine(
     DATABASE_URL,
-    echo=True,
     pool_pre_ping=True,
+    pool_recycle=3600,
+    connect_args={
+        "ssl": {}
+    },
 )
