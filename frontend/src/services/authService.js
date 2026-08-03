@@ -1,4 +1,4 @@
-const API = "http://127.0.0.1:8000";
+const API = "https://fleet-management-api-0va0.onrender.com";
 
 export async function register(data) {
     const response = await fetch(`${API}/auth/register`, {
